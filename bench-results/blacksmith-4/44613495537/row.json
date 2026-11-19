@@ -1,0 +1,31 @@
+{
+ "at": "2026-11-19T21:14:43+00:00",
+ "suite": "nextcloud",
+ "repo": "BluebagAI/bench-nextcloud",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44613495537",
+ "run_id": 44613495537,
+ "sha": "3af9e8eacade880993c85cf3b175d53108652ea0",
+ "conclusion": "success",
+ "wall_s": 1027,
+ "queue_s": 129,
+ "job_s": 4360,
+ "jobs": 10,
+ "job_max_s": 590,
+ "vcpu_min": 290.7,
+ "billed_min": 77,
+ "usd": 0.616,
+ "tests": {
+  "passed": 462,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 1,
+  "failed_tests": [],
+  "flaky_tests": [
+   "files/files-sidebar.spec.ts::changes the fileid on delete::default"
+  ],
+  "files": 9
+ }
+}
