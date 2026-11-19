@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-19T20:53:37+00:00",
+ "suite": "nextcloud",
+ "repo": "BluebagAI/bench-nextcloud",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333",
+ "run_id": 44611526333,
+ "sha": "3af9e8eacade880993c85cf3b175d53108652ea0",
+ "conclusion": "success",
+ "wall_s": 589,
+ "queue_s": 14,
+ "job_s": 2999,
+ "jobs": 10,
+ "job_max_s": 457,
+ "vcpu_min": 199.9,
+ "billed_min": 54,
+ "usd": 0.432,
+ "tests": {
+  "passed": 460,
+  "failed": 0,
+  "flaky": 3,
+  "skipped": 1,
+  "failed_tests": [],
+  "flaky_tests": [
+   "appstore/admin-settings-apps.spec.ts::Can enable an installed app::admin-settings",
+   "core/header-unified-search.spec.ts::\"More from\" opens the uncapped detail view, pages it, and Back returns to the aggregate list::default",
+   "users/users-columns.spec.ts::can show the Language column::default"
+  ],
+  "files": 9
+ }
+}

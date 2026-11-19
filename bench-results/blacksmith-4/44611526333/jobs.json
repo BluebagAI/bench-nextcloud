@@ -1,0 +1,1436 @@
+[
+ {
+  "id": 135869133165,
+  "name": "Playwright setup (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135869133165",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:43:18Z",
+  "started_at": "2026-11-19T20:43:27Z",
+  "completed_at": "2026-11-19T20:45:32Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-3t5mgk6qdlvebdgx",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:43:28Z",
+    "completed_at": "2026-11-19T20:43:30Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:43:30Z",
+    "completed_at": "2026-11-19T20:43:31Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:43:31Z",
+    "completed_at": "2026-11-19T20:43:39Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:43:39Z",
+    "completed_at": "2026-11-19T20:43:39Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:43:39Z",
+    "completed_at": "2026-11-19T20:43:40Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:43:40Z",
+    "completed_at": "2026-11-19T20:43:44Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:43:44Z",
+    "completed_at": "2026-11-19T20:45:21Z"
+   },
+   {
+    "name": "Save context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:21Z",
+    "completed_at": "2026-11-19T20:45:28Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-19T20:45:28Z",
+    "completed_at": "2026-11-19T20:45:28Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-19T20:45:28Z",
+    "completed_at": "2026-11-19T20:45:29Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-19T20:45:29Z",
+    "completed_at": "2026-11-19T20:45:29Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-19T20:45:29Z",
+    "completed_at": "2026-11-19T20:45:29Z"
+   }
+  ]
+ },
+ {
+  "id": 135870472895,
+  "name": "Playwright tests for installer (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870472895",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:38Z",
+  "completed_at": "2026-11-19T20:50:13Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-sk2fssvjiapqshoq",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:39Z",
+    "completed_at": "2026-11-19T20:45:42Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:42Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Initialize containers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:46:40Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:46:40Z",
+    "completed_at": "2026-11-19T20:46:44Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 5,
+    "started_at": "2026-11-19T20:46:44Z",
+    "completed_at": "2026-11-19T20:46:44Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:46:44Z",
+    "completed_at": "2026-11-19T20:46:44Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:46:44Z",
+    "completed_at": "2026-11-19T20:46:44Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T20:46:44Z",
+    "completed_at": "2026-11-19T20:46:48Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-19T20:46:48Z",
+    "completed_at": "2026-11-19T20:46:48Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T20:46:48Z",
+    "completed_at": "2026-11-19T20:46:48Z"
+   },
+   {
+    "name": "Run Playwright setup tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T20:46:48Z",
+    "completed_at": "2026-11-19T20:46:48Z"
+   },
+   {
+    "name": "Run Playwright setup tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:46:48Z",
+    "completed_at": "2026-11-19T20:50:06Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-19T20:50:06Z",
+    "completed_at": "2026-11-19T20:50:08Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 14,
+    "started_at": "2026-11-19T20:50:08Z",
+    "completed_at": "2026-11-19T20:50:08Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:50:08Z",
+    "completed_at": "2026-11-19T20:50:08Z"
+   },
+   {
+    "name": "Stop containers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:50:08Z",
+    "completed_at": "2026-11-19T20:50:09Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 28,
+    "started_at": "2026-11-19T20:50:09Z",
+    "completed_at": "2026-11-19T20:50:11Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 29,
+    "started_at": "2026-11-19T20:50:11Z",
+    "completed_at": "2026-11-19T20:50:11Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473144,
+  "name": "Playwright tests 3 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473144",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:39Z",
+  "completed_at": "2026-11-19T20:50:19Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-uusfumfcwgjbgny2",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:40Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:50Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:50Z",
+    "completed_at": "2026-11-19T20:45:50Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:50Z",
+    "completed_at": "2026-11-19T20:45:50Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:50Z",
+    "completed_at": "2026-11-19T20:45:50Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:50Z",
+    "completed_at": "2026-11-19T20:45:53Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:53Z",
+    "completed_at": "2026-11-19T20:45:53Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:53Z",
+    "completed_at": "2026-11-19T20:45:53Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:53Z",
+    "completed_at": "2026-11-19T20:45:53Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:53Z",
+    "completed_at": "2026-11-19T20:50:14Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:50:14Z",
+    "completed_at": "2026-11-19T20:50:15Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:50:15Z",
+    "completed_at": "2026-11-19T20:50:15Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:50:15Z",
+    "completed_at": "2026-11-19T20:50:15Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:50:15Z",
+    "completed_at": "2026-11-19T20:50:17Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:50:17Z",
+    "completed_at": "2026-11-19T20:50:17Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473196,
+  "name": "Playwright tests 2 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473196",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:39Z",
+  "completed_at": "2026-11-19T20:50:23Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-4ot66s6655xrpwa2",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:40Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:47Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:47Z",
+    "completed_at": "2026-11-19T20:45:47Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:47Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:50:18Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:50:18Z",
+    "completed_at": "2026-11-19T20:50:20Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:50:20Z",
+    "completed_at": "2026-11-19T20:50:20Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:50:20Z",
+    "completed_at": "2026-11-19T20:50:20Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:50:20Z",
+    "completed_at": "2026-11-19T20:50:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:50:21Z",
+    "completed_at": "2026-11-19T20:50:21Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473224,
+  "name": "Playwright tests 5 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473224",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:39Z",
+  "completed_at": "2026-11-19T20:51:33Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-4tehlmn2epycmqgh",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:39Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:49Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:49Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:51:28Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:51:28Z",
+    "completed_at": "2026-11-19T20:51:29Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:51:29Z",
+    "completed_at": "2026-11-19T20:51:29Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:51:29Z",
+    "completed_at": "2026-11-19T20:51:29Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:51:29Z",
+    "completed_at": "2026-11-19T20:51:31Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:51:31Z",
+    "completed_at": "2026-11-19T20:51:31Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473229,
+  "name": "Playwright tests 6 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473229",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:39Z",
+  "completed_at": "2026-11-19T20:53:16Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-n2i72docz7tbknoj",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:40Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:53:11Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:53:11Z",
+    "completed_at": "2026-11-19T20:53:12Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:53:12Z",
+    "completed_at": "2026-11-19T20:53:12Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:53:12Z",
+    "completed_at": "2026-11-19T20:53:12Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:53:12Z",
+    "completed_at": "2026-11-19T20:53:14Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:53:14Z",
+    "completed_at": "2026-11-19T20:53:14Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473308,
+  "name": "Playwright tests 4 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473308",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:39Z",
+  "completed_at": "2026-11-19T20:49:22Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-d327ti6uj2xypfle",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:40Z",
+    "completed_at": "2026-11-19T20:45:43Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:43Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:48Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:48Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:49:17Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:49:17Z",
+    "completed_at": "2026-11-19T20:49:19Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:49:19Z",
+    "completed_at": "2026-11-19T20:49:19Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:49:19Z",
+    "completed_at": "2026-11-19T20:49:19Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:49:19Z",
+    "completed_at": "2026-11-19T20:49:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:49:21Z",
+    "completed_at": "2026-11-19T20:49:21Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473315,
+  "name": "Playwright tests 7 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473315",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:40Z",
+  "completed_at": "2026-11-19T20:51:23Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-w6pvlqqaemsnxo7k",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:41Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:51:18Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:51:18Z",
+    "completed_at": "2026-11-19T20:51:19Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:51:19Z",
+    "completed_at": "2026-11-19T20:51:19Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:51:19Z",
+    "completed_at": "2026-11-19T20:51:19Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:51:19Z",
+    "completed_at": "2026-11-19T20:51:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:51:21Z",
+    "completed_at": "2026-11-19T20:51:21Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473332,
+  "name": "Playwright tests 1 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473332",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:41Z",
+  "completed_at": "2026-11-19T20:50:44Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-kfglicnsdifrizq2",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:42Z",
+    "completed_at": "2026-11-19T20:45:46Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:46Z",
+    "completed_at": "2026-11-19T20:45:46Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:46Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:50:39Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:50:39Z",
+    "completed_at": "2026-11-19T20:50:41Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:50:41Z",
+    "completed_at": "2026-11-19T20:50:41Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:50:41Z",
+    "completed_at": "2026-11-19T20:50:41Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:50:41Z",
+    "completed_at": "2026-11-19T20:50:42Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:50:42Z",
+    "completed_at": "2026-11-19T20:50:43Z"
+   }
+  ]
+ },
+ {
+  "id": 135870473346,
+  "name": "Playwright tests 8 / 8 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44611526333/job/135870473346",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:32Z",
+  "started_at": "2026-11-19T20:45:43Z",
+  "completed_at": "2026-11-19T20:51:38Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-5hru6iuhaildcyyl",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:45:44Z",
+    "completed_at": "2026-11-19T20:45:47Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:45:47Z",
+    "completed_at": "2026-11-19T20:45:47Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:45:47Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:51Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:45:51Z",
+    "completed_at": "2026-11-19T20:45:52Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:52Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:45:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:45:55Z",
+    "completed_at": "2026-11-19T20:51:31Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-19T20:51:31Z",
+    "completed_at": "2026-11-19T20:51:33Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-19T20:51:33Z",
+    "completed_at": "2026-11-19T20:51:33Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-19T20:51:33Z",
+    "completed_at": "2026-11-19T20:51:33Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-19T20:51:33Z",
+    "completed_at": "2026-11-19T20:51:36Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-19T20:51:36Z",
+    "completed_at": "2026-11-19T20:51:36Z"
+   }
+  ]
+ }
+]
