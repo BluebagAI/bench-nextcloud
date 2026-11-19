@@ -1,0 +1,790 @@
+﻿2026-11-19T21:17:07.5104177Z Current runner version: '2.338.2'
+2026-11-19T21:17:07.5107740Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-ymvov5iufyml4nwo'
+2026-11-19T21:17:07.5108414Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-19T21:17:07.5109160Z Machine name: 'ip-172-31-73-130'
+2026-11-19T21:17:07.5110575Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:17:07.5111100Z Contents: read
+2026-11-19T21:17:07.5111405Z Metadata: read
+2026-11-19T21:17:07.5111753Z ##[endgroup]
+2026-11-19T21:17:07.5113024Z Secret source: Actions
+2026-11-19T21:17:07.5113603Z Cache mode: write
+2026-11-19T21:17:07.5114029Z Prepare workflow directory
+2026-11-19T21:17:07.5416873Z Prepare all required actions
+2026-11-19T21:17:07.5447181Z Getting action download info
+2026-11-19T21:17:07.9345045Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T21:17:08.0642573Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:17:08.0853486Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T21:17:08.6126643Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T21:17:09.2795196Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:17:09.8986957Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:17:10.6163412Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-19T21:17:10.6235119Z Complete job name: Playwright tests for installer (blacksmith-4)
+2026-11-19T21:17:10.6676732Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T21:17:10.6782312Z ##[group]Run '/setup.sh'
+2026-11-19T21:17:10.6804125Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:17:10.6804459Z env:
+2026-11-19T21:17:10.6804606Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:10.6804781Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:10.6804957Z   BLACKSMITH_CHECK_RUN_ID: 135888956738
+2026-11-19T21:17:10.6805191Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests for installer (blacksmith-4)
+2026-11-19T21:17:10.6805426Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:17:10.6805606Z ##[endgroup]
+2026-11-19T21:17:10.7174329Z Logging daemon started (blacksmithd for logs)
+2026-11-19T21:17:10.7285121Z Results daemon started (blacksmithd for results)
+2026-11-19T21:17:10.7527979Z Background adoption and SSH setup started (PID: 3306)
+2026-11-19T21:17:10.7530612Z 
+2026-11-19T21:17:10.7531043Z ----------------------------------------
+2026-11-19T21:17:10.7531515Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44616825697/jobs/135888956738
+2026-11-19T21:17:10.7531880Z SSH Access (using your GitHub SSH key):
+2026-11-19T21:17:10.7532254Z   ssh -p 64001 runner@blacksmith-4vcpu-ubuntu-2404-ymvov5iufyml4nwo.vm.blacksmith.sh
+2026-11-19T21:17:10.7532530Z 
+2026-11-19T21:17:10.7532709Z No GitHub SSH key? Add one at:
+2026-11-19T21:17:10.7533385Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-19T21:17:10.7533719Z 
+2026-11-19T21:17:10.7533836Z ----------------------------------------
+2026-11-19T21:17:10.7534026Z 
+2026-11-19T21:17:10.7534188Z VM ID: blacksmith-4vcpu-ubuntu-2404-ymvov5iufyml4nwo
+2026-11-19T21:17:10.7534402Z Host: production-192.240.248.129-x8664
+2026-11-19T21:17:10.7534612Z Host Agent PID: 1416115
+2026-11-19T21:17:10.7534767Z Host Agent Git SHA: 0116ed667
+2026-11-19T21:17:10.7534933Z Host CPU Manufacturer: AuthenticAMD
+2026-11-19T21:17:10.7535126Z Blacksmith Host Generation: gen 2
+2026-11-19T21:17:10.7535411Z Petname: production-known-ox-e70596d5
+2026-11-19T21:17:10.7535950Z Region: us-west
+2026-11-19T21:17:10.7536094Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-19T21:17:10.7554848Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-19T21:17:10.7555116Z 
+2026-11-19T21:17:10.7555243Z Enabling Blacksmith transparent cache
+2026-11-19T21:17:10.7753733Z ##[group]Checking docker version
+2026-11-19T21:17:10.7768354Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2026-11-19T21:17:12.0130759Z '1.48'
+2026-11-19T21:17:12.0142795Z Docker daemon API version: '1.48'
+2026-11-19T21:17:12.0143107Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2026-11-19T21:17:12.0334114Z '1.48'
+2026-11-19T21:17:12.0372082Z Docker client API version: '1.48'
+2026-11-19T21:17:12.0378984Z ##[endgroup]
+2026-11-19T21:17:12.0392773Z ##[group]Clean up resources from previous jobs
+2026-11-19T21:17:12.0397430Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=0077f7"
+2026-11-19T21:17:12.0523392Z ##[command]/usr/bin/docker network prune --force --filter "label=0077f7"
+2026-11-19T21:17:12.0617689Z ##[endgroup]
+2026-11-19T21:17:12.0618009Z ##[group]Create local container network
+2026-11-19T21:17:12.0625149Z ##[command]/usr/bin/docker network create --label 0077f7 github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f
+2026-11-19T21:17:12.0908790Z 8f686585b767383670f58bda83dfb26ecc94df526ec7c0d1e20964059521ca0d
+2026-11-19T21:17:12.0921728Z ##[endgroup]
+2026-11-19T21:17:12.0958108Z ##[group]Starting mysql service container
+2026-11-19T21:17:12.0981430Z ##[command]/usr/bin/docker pull mysql:9.7
+2026-11-19T21:17:13.2374959Z 9.7: Pulling from library/mysql
+2026-11-19T21:17:13.5326687Z Digest: sha256:df90258da46f6e7ff8574ff84f17618aba0765cac749928299c69fd4e7cb8ad8
+2026-11-19T21:17:13.5327264Z Status: Image is up to date for mysql:9.7
+2026-11-19T21:17:13.5334719Z docker.io/library/mysql:9.7
+2026-11-19T21:17:13.5429893Z ##[command]/usr/bin/docker create --name b66d2173c6f04fca98effeeebc417900_mysql97_43b16e --label 0077f7 --network github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f --network-alias mysql -p 3306/tcp --health-cmd="mysqladmin ping" --health-interval 5s --health-timeout 2s --health-retries 10 -e "MYSQL_ROOT_PASSWORD=rootpassword" -e "MYSQL_USER=nextcloud" -e "MYSQL_PASSWORD=nextcloud" -e "MYSQL_DATABASE=nextcloud" -e GITHUB_ACTIONS=true -e CI=true mysql:9.7
+2026-11-19T21:17:13.5853398Z 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:17:13.5884634Z ##[command]/usr/bin/docker start 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:17:13.7934398Z 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:17:13.7951495Z ##[command]/usr/bin/docker ps --all --filter id=2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-11-19T21:17:13.8084047Z 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516 Up Less than a second (health: starting)
+2026-11-19T21:17:13.8103699Z ##[command]/usr/bin/docker port 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:17:13.8212490Z 3306/tcp -> 0.0.0.0:32768
+2026-11-19T21:17:13.8212966Z 3306/tcp -> [::]:32768
+2026-11-19T21:17:13.8233289Z ##[endgroup]
+2026-11-19T21:17:13.8234139Z ##[group]Starting mariadb service container
+2026-11-19T21:17:13.8235179Z ##[command]/usr/bin/docker pull mariadb:12.3
+2026-11-19T21:17:14.7617305Z 12.3: Pulling from library/mariadb
+2026-11-19T21:17:14.8376350Z Digest: sha256:4ebbcf100a3ba320766dfa0e1af008df12261301db6ef72798c7650f70794aed
+2026-11-19T21:17:14.8376716Z Status: Image is up to date for mariadb:12.3
+2026-11-19T21:17:14.8379537Z docker.io/library/mariadb:12.3
+2026-11-19T21:17:14.8398220Z ##[command]/usr/bin/docker create --name 710387d08e0144a3b08bfb0895c4b2f3_mariadb123_f3bdab --label 0077f7 --network github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f --network-alias mariadb -p 3306/tcp --health-cmd="mariadb-admin ping" --health-interval 5s --health-timeout 2s --health-retries 5 -e "MARIADB_ROOT_PASSWORD=rootpassword" -e "MARIADB_USER=nextcloud" -e "MARIADB_PASSWORD=nextcloud" -e "MARIADB_DATABASE=nextcloud" -e GITHUB_ACTIONS=true -e CI=true mariadb:12.3
+2026-11-19T21:17:14.8739495Z 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:17:14.8746946Z ##[command]/usr/bin/docker start 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:17:15.0079510Z 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:17:15.0094022Z ##[command]/usr/bin/docker ps --all --filter id=69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-11-19T21:17:15.0241221Z 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888 Up Less than a second (health: starting)
+2026-11-19T21:17:15.0251118Z ##[command]/usr/bin/docker port 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:17:15.0373928Z 3306/tcp -> 0.0.0.0:32769
+2026-11-19T21:17:15.0375316Z 3306/tcp -> [::]:32769
+2026-11-19T21:17:15.0391999Z ##[endgroup]
+2026-11-19T21:17:15.0393078Z ##[group]Starting postgres service container
+2026-11-19T21:17:15.0394288Z ##[command]/usr/bin/docker pull postgres:18
+2026-11-19T21:17:15.9368855Z 18: Pulling from library/postgres
+2026-11-19T21:17:16.0061266Z Digest: sha256:e754b839f447639b7004895f4d8a4bfcb4e9dbe3a1bc035f27f646562a16fd61
+2026-11-19T21:17:16.0062021Z Status: Image is up to date for postgres:18
+2026-11-19T21:17:16.0080003Z docker.io/library/postgres:18
+2026-11-19T21:17:16.0355246Z ##[command]/usr/bin/docker create --name 6f7e7c0089f94135b346613346a7b969_postgres18_8f3f1a --label 0077f7 --network github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f --network-alias postgres -p 5432/tcp --health-cmd pg_isready --health-interval 5s --health-timeout 2s --health-retries 5 --health-start-period 5s --health-start-interval 500ms -e "POSTGRES_USER=root" -e "POSTGRES_PASSWORD=rootpassword" -e "POSTGRES_DB=nextcloud" -e GITHUB_ACTIONS=true -e CI=true postgres:18
+2026-11-19T21:17:16.0686793Z 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:17:16.0696374Z ##[command]/usr/bin/docker start 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:17:16.1853651Z 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:17:16.1862257Z ##[command]/usr/bin/docker ps --all --filter id=955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-11-19T21:17:16.1995793Z 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19 Up Less than a second (health: starting)
+2026-11-19T21:17:16.2007836Z ##[command]/usr/bin/docker port 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:17:16.2111899Z 5432/tcp -> 0.0.0.0:32770
+2026-11-19T21:17:16.2112359Z 5432/tcp -> [::]:32770
+2026-11-19T21:17:16.2119017Z ##[endgroup]
+2026-11-19T21:17:16.2120186Z ##[group]Starting oracle service container
+2026-11-19T21:17:16.2128544Z ##[command]/usr/bin/docker --config /home/runner/_work/_temp/.docker_ebc80dad-e8d7-4858-90b3-0a51650821e1 login ghcr.io -u ohansemmanuel --password-stdin
+2026-11-19T21:17:16.9027080Z ##[command]/usr/bin/docker --config /home/runner/_work/_temp/.docker_ebc80dad-e8d7-4858-90b3-0a51650821e1 pull ghcr.io/gvenzl/oracle-free:23
+2026-11-19T21:17:17.8643521Z 23: Pulling from gvenzl/oracle-free
+2026-11-19T21:17:18.1113865Z Digest: sha256:188ff1612d2abe1f33a8999aa9a5495a372031fc71b68fca8f375315f28e065d
+2026-11-19T21:17:18.1114658Z Status: Image is up to date for ghcr.io/gvenzl/oracle-free:23
+2026-11-19T21:17:18.1122356Z ghcr.io/gvenzl/oracle-free:23
+2026-11-19T21:17:18.1147297Z ##[command]/usr/bin/docker create --name e9c7ee7bdf3b4e738603e684895cdd50_ghcriogvenzloraclefree23_62f7d8 --label 0077f7 --network github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f --network-alias oracle -p 1521 --health-cmd healthcheck.sh --health-interval 20s --health-timeout 10s --health-retries 10 -e "ORACLE_PASSWORD=oracle" -e GITHUB_ACTIONS=true -e CI=true ghcr.io/gvenzl/oracle-free:23
+2026-11-19T21:17:18.1525906Z 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:17:18.1546263Z ##[command]/usr/bin/docker start 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:17:18.3337921Z 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:17:18.3349148Z ##[command]/usr/bin/docker ps --all --filter id=0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-11-19T21:17:18.3443804Z 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2 Up Less than a second (health: starting)
+2026-11-19T21:17:18.3476959Z ##[command]/usr/bin/docker port 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:17:18.3582232Z 1521/tcp -> 0.0.0.0:32771
+2026-11-19T21:17:18.3599705Z 1521/tcp -> [::]:32771
+2026-11-19T21:17:18.3644013Z ##[endgroup]
+2026-11-19T21:17:18.3656736Z ##[group]Waiting for all services to be ready
+2026-11-19T21:17:18.3669164Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:17:18.3865340Z mysql service is starting, waiting for it to become healthy.
+2026-11-19T21:17:24.4330066Z mysql service is healthy.
+2026-11-19T21:17:24.4330893Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:17:24.4604183Z mariadb service is healthy.
+2026-11-19T21:17:24.4604813Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:17:24.4827194Z postgres service is healthy.
+2026-11-19T21:17:24.4827723Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:17:24.4945478Z oracle service is starting, waiting for it to become healthy.
+2026-11-19T21:17:34.5390802Z oracle service is still starting after 10 seconds.
+2026-11-19T21:17:38.8561874Z oracle service is healthy.
+2026-11-19T21:17:38.8562385Z ##[endgroup]
+2026-11-19T21:17:38.8650961Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T21:17:38.8651195Z with:
+2026-11-19T21:17:38.8651335Z   key: playwright-context-44616825697
+2026-11-19T21:17:38.8651503Z   path: ./
+2026-11-19T21:17:38.8651637Z   enableCrossOsArchive: false
+2026-11-19T21:17:38.8651792Z   fail-on-cache-miss: false
+2026-11-19T21:17:38.8651937Z   lookup-only: false
+2026-11-19T21:17:38.8652077Z env:
+2026-11-19T21:17:38.8652205Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:38.8652379Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:38.8652553Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:38.8652719Z ##[endgroup]
+2026-11-19T21:17:39.3678815Z Cache hit for: playwright-context-44616825697
+2026-11-19T21:17:40.0200693Z Received 306386907 of 306386907 (100.0%), 468.3 MBs/sec
+2026-11-19T21:17:40.0201995Z Cache Size: ~292 MB (306386907 B)
+2026-11-19T21:17:40.0238021Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/7e062a35-472e-4b2d-9c0a-4e216611f77f/cache.tzst -P -C /home/runner/_work/bench-nextcloud/bench-nextcloud --use-compress-program unzstd
+2026-11-19T21:17:41.8985057Z Cache restored successfully
+2026-11-19T21:17:41.9337218Z Cache restored from key: playwright-context-44616825697
+2026-11-19T21:17:41.9522750Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T21:17:41.9523031Z with:
+2026-11-19T21:17:41.9523151Z   path: ./package.json
+2026-11-19T21:17:41.9523290Z env:
+2026-11-19T21:17:41.9523421Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:41.9523588Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:41.9523759Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:41.9523923Z ##[endgroup]
+2026-11-19T21:17:42.0131184Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T21:17:42.0131418Z with:
+2026-11-19T21:17:42.0131549Z   node-version: ^24.0.0
+2026-11-19T21:17:42.0131684Z   check-latest: false
+2026-11-19T21:17:42.0133007Z   token: ***
+2026-11-19T21:17:42.0133138Z   package-manager-cache: true
+2026-11-19T21:17:42.0133279Z env:
+2026-11-19T21:17:42.0133407Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:42.0133579Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:42.0133747Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:42.0133912Z ##[endgroup]
+2026-11-19T21:17:42.1061447Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-19T21:17:42.1887457Z ##[group]Environment details
+2026-11-19T21:17:42.4347066Z node: v24.22.1
+2026-11-19T21:17:42.4347568Z npm: 11.19.1
+2026-11-19T21:17:42.4347876Z yarn: 1.22.22
+2026-11-19T21:17:42.4348749Z ##[endgroup]
+2026-11-19T21:17:42.4433894Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T21:17:42.4434105Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T21:17:42.4463514Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:17:42.4463695Z env:
+2026-11-19T21:17:42.4463836Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:42.4464022Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:42.4464212Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:42.4464397Z ##[endgroup]
+2026-11-19T21:17:45.1049218Z 
+2026-11-19T21:17:45.1052811Z changed 23 packages in 3s
+2026-11-19T21:17:45.1052992Z 
+2026-11-19T21:17:45.1053111Z 15 packages are looking for funding
+2026-11-19T21:17:45.1053313Z   run `npm fund` for details
+2026-11-19T21:17:45.1238837Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T21:17:45.1239112Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T21:17:45.1260473Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:17:45.1260617Z env:
+2026-11-19T21:17:45.1260747Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:45.1260915Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:45.1261081Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:45.1261239Z ##[endgroup]
+2026-11-19T21:17:45.2020648Z ##[group]Run npm run playwright:setup -- --reporter=list,json
+2026-11-19T21:17:45.2020951Z [36;1mnpm run playwright:setup -- --reporter=list,json[0m
+2026-11-19T21:17:45.2044646Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:17:45.2044921Z env:
+2026-11-19T21:17:45.2045143Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:17:45.2045456Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:17:45.2045745Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:17:45.2046024Z   PLAYWRIGHT_SETUP: true
+2026-11-19T21:17:45.2046410Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/_work/bench-nextcloud/bench-nextcloud/results.json
+2026-11-19T21:17:45.2046800Z ##[endgroup]
+2026-11-19T21:17:45.2939269Z 
+2026-11-19T21:17:45.2940105Z > nextcloud@1.0.0 playwright:setup
+2026-11-19T21:17:45.2940681Z > playwright test --project=setup --reporter=list,json
+2026-11-19T21:17:45.2940943Z 
+2026-11-19T21:17:45.9229011Z [WebServer] 
+2026-11-19T21:17:45.9229643Z [WebServer] Pulling images… ⏳
+2026-11-19T21:17:47.0160875Z [WebServer] └─ Done
+2026-11-19T21:17:47.0161086Z [WebServer] 
+2026-11-19T21:17:47.0161368Z [WebServer] Checking running containers… 🔍
+2026-11-19T21:17:47.0215205Z [WebServer] └─ None found!
+2026-11-19T21:17:47.0216207Z [WebServer] 
+2026-11-19T21:17:47.0217646Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T21:17:47.0218425Z [WebServer] ├─ Using branch 'master'
+2026-11-19T21:17:47.2453988Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T21:17:47.2805442Z [WebServer] ├─ Connected to the GitHub Actions network for the setup tests
+2026-11-19T21:17:47.2805898Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T21:17:54.3423394Z [WebServer] └─ Done
+2026-11-19T21:17:54.3424072Z [WebServer] 
+2026-11-19T21:17:54.3424831Z [WebServer] Configuring Nextcloud…
+2026-11-19T21:17:54.5960615Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T21:17:54.8726465Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T21:17:55.1612059Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T21:17:55.4253277Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T21:17:55.6977133Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T21:17:55.9943551Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T21:17:56.0033679Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T21:17:56.8584512Z [WebServer] │  └─ OK !
+2026-11-19T21:17:56.8585012Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T21:17:57.1754691Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T21:17:57.2154773Z [WebServer] ├─ Created writable apps folder for the setup tests
+2026-11-19T21:17:57.2155073Z [WebServer] 
+2026-11-19T21:17:57.2155290Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T21:17:57.2680982Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T21:17:57.5501129Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T21:17:57.8424077Z [WebServer] ├─ Disabled app store
+2026-11-19T21:17:58.1227321Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T21:17:58.1227649Z [WebServer] ├─ Initialize cron job...
+2026-11-19T21:20:16.4413839Z [WebServer] │  └─ OK !
+2026-11-19T21:20:16.4418585Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T21:20:18.2952621Z 
+2026-11-19T21:20:18.2953860Z Running 7 tests using 1 worker
+2026-11-19T21:20:18.2954147Z 
+2026-11-19T21:20:23.6299863Z   ✓  1 [setup] › tests/playwright/e2e/core/setup.spec.ts:107:3 › Nextcloud installation wizard › SQLite › installs with SQLite @setup @db_sqlite (4.4s)
+2026-11-19T21:20:46.1560335Z   ✓  2 [setup] › tests/playwright/e2e/core/setup.spec.ts:120:3 › Nextcloud installation wizard › SQLite › installs with SQLite and installs recommended apps (success) @setup @db_sqlite (22.5s)
+2026-11-19T21:21:08.7541359Z   ✓  3 [setup] › tests/playwright/e2e/core/setup.spec.ts:128:3 › Nextcloud installation wizard › SQLite › installs with SQLite and reports failed recommended apps @setup @db_sqlite (22.6s)
+2026-11-19T21:21:13.4484774Z   ✓  4 [setup] › tests/playwright/e2e/core/setup.spec.ts:137:2 › Nextcloud installation wizard › installs with MySQL @setup @db_mysql (4.7s)
+2026-11-19T21:21:18.4771679Z   ✓  5 [setup] › tests/playwright/e2e/core/setup.spec.ts:147:2 › Nextcloud installation wizard › installs with MariaDB @setup @db_mariadb (5.0s)
+2026-11-19T21:21:24.6903505Z   ✓  6 [setup] › tests/playwright/e2e/core/setup.spec.ts:157:2 › Nextcloud installation wizard › installs with PostgreSQL @setup @db_postgres (6.2s)
+2026-11-19T21:21:57.9966417Z   ✓  7 [setup] › tests/playwright/e2e/core/setup.spec.ts:167:2 › Nextcloud installation wizard › installs with Oracle @setup @db_oracle (33.3s)
+2026-11-19T21:21:58.0713368Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:21:58.0716252Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:21:58.5964666Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:21:58.6013627Z 
+2026-11-19T21:21:58.6017509Z   7 passed (4.2m)
+2026-11-19T21:21:58.6341952Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:21:58.6342365Z with:
+2026-11-19T21:21:58.6342593Z   name: results-blacksmith-4-setup
+2026-11-19T21:21:58.6342863Z   path: results.json
+2026-11-19T21:21:58.6343087Z   retention-days: 30
+2026-11-19T21:21:58.6343321Z   if-no-files-found: ignore
+2026-11-19T21:21:58.6343581Z   compression-level: 6
+2026-11-19T21:21:58.6343817Z   overwrite: false
+2026-11-19T21:21:58.6344054Z   include-hidden-files: false
+2026-11-19T21:21:58.6344317Z   archive: true
+2026-11-19T21:21:58.6344524Z env:
+2026-11-19T21:21:58.6344743Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:21:58.6345048Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:21:58.6345383Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:21:58.6345666Z ##[endgroup]
+2026-11-19T21:21:58.8091787Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:21:58.8095116Z Artifact name is valid!
+2026-11-19T21:21:58.8095487Z Root directory input is valid!
+2026-11-19T21:21:59.1589216Z Uploading artifact: results-blacksmith-4-setup.zip
+2026-11-19T21:21:59.1618540Z Beginning upload of artifact content to blob storage
+2026-11-19T21:21:59.4276722Z Uploaded bytes 2857
+2026-11-19T21:21:59.4907422Z Finished uploading artifact content to blob storage!
+2026-11-19T21:21:59.4908251Z SHA256 digest of uploaded artifact is ddb50bcc82f289862cdfa4cd8ffa07fa7b37b973dd6e3d5560a64e0bae1a541e
+2026-11-19T21:21:59.4908842Z Finalizing artifact upload
+2026-11-19T21:22:00.0639502Z Artifact results-blacksmith-4-setup successfully finalized. Artifact ID 14575512400
+2026-11-19T21:22:00.0640574Z Artifact results-blacksmith-4-setup has been successfully uploaded! Final size is 2857 bytes. Artifact ID is 14575512400
+2026-11-19T21:22:00.0642254Z Artifact download URL: https://github.com/BluebagAI/bench-nextcloud/actions/runs/44616825697/artifacts/14575512400
+2026-11-19T21:22:00.0768846Z Post job cleanup.
+2026-11-19T21:22:00.1784221Z Print service container logs: b66d2173c6f04fca98effeeebc417900_mysql97_43b16e
+2026-11-19T21:22:00.1790358Z ##[command]/usr/bin/docker logs --details 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:22:00.2137997Z  2026-11-19T21:17:14.322981Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2026-11-19T21:22:00.2138507Z  2026-11-19T21:17:14.324090Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.7.4) initializing of server in progress as process 80
+2026-11-19T21:22:00.2139035Z  2026-11-19T21:17:14.324097Z 0 [System] [MY-015150] [Server] Server version with update: '9.7.4.0'
+2026-11-19T21:22:00.2139372Z  2026-11-19T21:17:14.329081Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-11-19T21:22:00.2139732Z  2026-11-19T21:17:14.463315Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-11-19T21:22:00.2140258Z  2026-11-19T21:17:14.845872Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2026-11-19T21:22:00.2140728Z  2026-11-19T21:17:16.232917Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2026-11-19T21:22:00.2141036Z  2026-11-19T21:17:16.286233Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-11-19T21:22:00.2141369Z  2026-11-19T21:17:16.510568Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 9.7.4) starting as process 117
+2026-11-19T21:22:00.2141730Z  2026-11-19T21:17:16.510575Z 0 [System] [MY-015150] [Server] Server version with update: '9.7.4.0'
+2026-11-19T21:22:00.2142076Z  2026-11-19T21:17:16.510602Z 0 [System] [MY-015603] [Server] MySQL Server has access to 4 logical CPUs.
+2026-11-19T21:22:00.2142464Z  2026-11-19T21:17:16.510616Z 0 [System] [MY-015603] [Server] MySQL Server has access to 16555606016 bytes of physical memory.
+2026-11-19T21:22:00.2143429Z  2026-11-19T21:17:16.527960Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-11-19T21:22:00.2143758Z  2026-11-19T21:17:16.711522Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-11-19T21:22:00.2144084Z  2026-11-19T21:17:16.893095Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-11-19T21:22:00.2144536Z  2026-11-19T21:17:16.893132Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-11-19T21:22:00.2145186Z  2026-11-19T21:17:16.894607Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-11-19T21:22:00.2145773Z  2026-11-19T21:17:16.905010Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2026-11-19T21:22:00.2146326Z  2026-11-19T21:17:16.905332Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.7.4'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2026-11-19T21:22:00.2148099Z  2026-11-19 21:17:13+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.7.4-1.el9 started.
+2026-11-19T21:22:00.2148418Z  2026-11-19 21:17:14+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-11-19T21:22:00.2148730Z  2026-11-19 21:17:14+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.7.4-1.el9 started.
+2026-11-19T21:22:00.2149038Z  2026-11-19 21:17:14+00:00 [Note] [Entrypoint]: Initializing database files
+2026-11-19T21:22:00.2149304Z  2026-11-19 21:17:16+00:00 [Note] [Entrypoint]: Database files initialized
+2026-11-19T21:22:00.2149571Z  2026-11-19 21:17:16+00:00 [Note] [Entrypoint]: Starting temporary server
+2026-11-19T21:22:00.2149833Z  2026-11-19 21:17:16+00:00 [Note] [Entrypoint]: Temporary server started.
+2026-11-19T21:22:00.2150203Z  '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+2026-11-19T21:22:00.2151020Z  2026-11-19 21:17:17+00:00 [Note] [Entrypoint]: Creating database nextcloud
+2026-11-19T21:22:00.2151321Z  2026-11-19 21:17:17+00:00 [Note] [Entrypoint]: Creating user nextcloud
+2026-11-19T21:22:00.2151707Z  2026-11-19T21:17:17.539115Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 9.7.4).
+2026-11-19T21:22:00.2152173Z  2026-11-19T21:17:18.372628Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 9.7.4)  MySQL Community Server - GPL.
+2026-11-19T21:22:00.2152556Z  2026-11-19T21:17:18.372684Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-11-19T21:22:00.2152852Z  2026-11-19T21:17:18.552844Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-11-19T21:22:00.2153184Z  2026-11-19T21:17:18.738005Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 9.7.4) starting as process 1
+2026-11-19T21:22:00.2153544Z  2026-11-19T21:17:18.738010Z 0 [System] [MY-015150] [Server] Server version with update: '9.7.4.0'
+2026-11-19T21:22:00.2153886Z  2026-11-19T21:17:18.738018Z 0 [System] [MY-015603] [Server] MySQL Server has access to 4 logical CPUs.
+2026-11-19T21:22:00.2154273Z  2026-11-19T21:17:18.738028Z 0 [System] [MY-015603] [Server] MySQL Server has access to 16555606016 bytes of physical memory.
+2026-11-19T21:22:00.2154654Z  2026-11-19T21:17:18.741229Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-11-19T21:22:00.2154978Z  2026-11-19T21:17:19.114180Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-11-19T21:22:00.2155318Z  2026-11-19T21:17:19.374346Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-11-19T21:22:00.2155771Z  2026-11-19T21:17:19.374392Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-11-19T21:22:00.2156416Z  2026-11-19T21:17:19.375974Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-11-19T21:22:00.2157208Z  2026-11-19T21:17:19.403020Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+2026-11-19T21:22:00.2157873Z  2026-11-19T21:17:19.403083Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.7.4'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2026-11-19T21:22:00.2158378Z  2026-11-19 21:17:17+00:00 [Note] [Entrypoint]: Giving user nextcloud access to schema nextcloud
+2026-11-19T21:22:00.2158620Z  
+2026-11-19T21:22:00.2158792Z  2026-11-19 21:17:17+00:00 [Note] [Entrypoint]: Stopping temporary server
+2026-11-19T21:22:00.2159050Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Temporary server stopped
+2026-11-19T21:22:00.2159256Z  
+2026-11-19T21:22:00.2159461Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+2026-11-19T21:22:00.2159694Z  
+2026-11-19T21:22:00.2164928Z Stop and remove container: b66d2173c6f04fca98effeeebc417900_mysql97_43b16e
+2026-11-19T21:22:00.2169755Z ##[command]/usr/bin/docker rm --force 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:22:00.5668195Z 2e1cf404f8d68f21a1b107f9441e18b6a6c519df7877e0870b7285940a05f516
+2026-11-19T21:22:00.5684681Z Print service container logs: 710387d08e0144a3b08bfb0895c4b2f3_mariadb123_f3bdab
+2026-11-19T21:22:00.5685909Z ##[command]/usr/bin/docker logs --details 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:22:00.5814564Z  2026-11-19 21:17:15+00:00 [Warn] [Entrypoint]: /sys/fs/cgroup///memory.pressure not writable, functionality unavailable to MariaDB
+2026-11-19T21:22:00.5816305Z  2026-11-19 21:17:15 0 [Warning] mariadbd: io_uring_queue_init() failed with EPERM: sysctl kernel.io_uring_disabled has the value 2, or 1 and the user of the process is not a member of sysctl kernel.io_uring_group. (see man 2 io_uring_setup).
+2026-11-19T21:22:00.5817253Z  create_uring failed: falling back to libaio
+2026-11-19T21:22:00.5820051Z  2026-11-19 21:17:16 0 [Note] Starting MariaDB 12.3.3-MariaDB-ubu2404 source revision 83e909fc2a0dbc394b4b683fb3fa2d7dcf26cc5e server_uid 5f8xj/Bsx309BUZHc8kUglBhXfU= as process 93
+2026-11-19T21:22:00.5820574Z  2026-11-19 21:17:16 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2026-11-19T21:22:00.5820824Z  2026-11-19 21:17:16 0 [Note] InnoDB: Number of transaction pools: 1
+2026-11-19T21:22:00.5821063Z  2026-11-19 21:17:16 0 [Note] InnoDB: Using AVX512 instructions
+2026-11-19T21:22:00.5821352Z  2026-11-19 21:17:16 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2026-11-19T21:22:00.5821914Z  2026-11-19 21:17:16 0 [Warning] mariadbd: io_uring_queue_init() failed with EPERM: sysctl kernel.io_uring_disabled has the value 2, or 1 and the user of the process is not a member of sysctl kernel.io_uring_group. (see man 2 io_uring_setup).
+2026-11-19T21:22:00.5822433Z  create_uring failed: falling back to libaio
+2026-11-19T21:22:00.5822645Z  2026-11-19 21:17:16 0 [Note] InnoDB: Using Linux native AIO
+2026-11-19T21:22:00.5822931Z  2026-11-19 21:17:16 0 [Note] InnoDB: innodb_buffer_pool_size_max=8388608m, innodb_buffer_pool_size=128m
+2026-11-19T21:22:00.5823237Z  2026-11-19 21:17:16 0 [Note] InnoDB: Completed initialization of buffer pool
+2026-11-19T21:22:00.5823530Z  2026-11-19 21:17:16 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2026-11-19T21:22:00.5823853Z  2026-11-19 21:17:16 0 [Note] InnoDB: End of log at LSN=45093
+2026-11-19T21:22:00.5824078Z  2026-11-19 21:17:16 0 [Note] InnoDB: Opened 3 undo tablespaces
+2026-11-19T21:22:00.5824417Z  2026-11-19 21:17:16 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2026-11-19T21:22:00.5824782Z  2026-11-19 21:17:16 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2026-11-19T21:22:00.5825338Z  2026-11-19 21:17:16 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2026-11-19T21:22:00.5825610Z  2026-11-19 21:17:16 0 [Note] InnoDB: log sequence number 45093; transaction id 14
+2026-11-19T21:22:00.5825851Z  2026-11-19 21:17:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2026-11-19T21:22:00.5826081Z  2026-11-19 21:17:16 0 [Note] Plugin 'wsrep-provider' is disabled.
+2026-11-19T21:22:00.5826325Z  2026-11-19 21:17:17 0 [Note] mariadbd: Event Scheduler: Loaded 0 events
+2026-11-19T21:22:00.5826621Z  2026-11-19 21:17:17 0 [Note] Replication not automatically started: --skip-slave-start was specified
+2026-11-19T21:22:00.5826920Z  2026-11-19 21:17:17 0 [Note] mariadbd: ready for connections.
+2026-11-19T21:22:00.5827247Z  Version: '12.3.3-MariaDB-ubu2404'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+2026-11-19T21:22:00.5827637Z  2026-11-19 21:17:18 0 [Note] mariadbd (initiated by: unknown): Normal shutdown
+2026-11-19T21:22:00.5827891Z  2026-11-19 21:17:18 0 [Note] InnoDB: FTS optimize thread exiting.
+2026-11-19T21:22:00.5828111Z  2026-11-19 21:17:18 0 [Note] InnoDB: Starting shutdown...
+2026-11-19T21:22:00.5828426Z  2026-11-19 21:17:18 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2026-11-19T21:22:00.5828720Z  2026-11-19 21:17:18 0 [Note] InnoDB: Buffer pool(s) dump completed at 261119 21:17:18
+2026-11-19T21:22:00.5829006Z  2026-11-19 21:17:18 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2026-11-19T21:22:00.5829315Z  2026-11-19 21:17:18 0 [Note] Shutdown completed; log sequence number 45450; transaction id 15
+2026-11-19T21:22:00.5829672Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:12.3.3+maria~ubu2404 started.
+2026-11-19T21:22:00.5830037Z  2026-11-19 21:17:18 0 [Note] mariadbd: Shutdown complete
+2026-11-19T21:22:00.5830462Z  2026-11-19 21:17:18 0 [Note] Starting MariaDB 12.3.3-MariaDB-ubu2404 source revision 83e909fc2a0dbc394b4b683fb3fa2d7dcf26cc5e server_uid 5f8xj/Bsx309BUZHc8kUglBhXfU= as process 1
+2026-11-19T21:22:00.5830891Z  2026-11-19 21:17:18 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2026-11-19T21:22:00.5831221Z  2026-11-19 21:17:18 0 [Note] InnoDB: Number of transaction pools: 1
+2026-11-19T21:22:00.5831450Z  2026-11-19 21:17:18 0 [Note] InnoDB: Using AVX512 instructions
+2026-11-19T21:22:00.5831725Z  2026-11-19 21:17:18 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2026-11-19T21:22:00.5832276Z  2026-11-19 21:17:18 0 [Warning] mariadbd: io_uring_queue_init() failed with EPERM: sysctl kernel.io_uring_disabled has the value 2, or 1 and the user of the process is not a member of sysctl kernel.io_uring_group. (see man 2 io_uring_setup).
+2026-11-19T21:22:00.5832763Z  create_uring failed: falling back to libaio
+2026-11-19T21:22:00.5832965Z  2026-11-19 21:17:18 0 [Note] InnoDB: Using Linux native AIO
+2026-11-19T21:22:00.5833248Z  2026-11-19 21:17:18 0 [Note] InnoDB: innodb_buffer_pool_size_max=8388608m, innodb_buffer_pool_size=128m
+2026-11-19T21:22:00.5833685Z  2026-11-19 21:17:18 0 [Note] InnoDB: Completed initialization of buffer pool
+2026-11-19T21:22:00.5833990Z  2026-11-19 21:17:18 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2026-11-19T21:22:00.5834271Z  2026-11-19 21:17:18 0 [Note] InnoDB: End of log at LSN=45450
+2026-11-19T21:22:00.5834495Z  2026-11-19 21:17:18 0 [Note] InnoDB: Opened 3 undo tablespaces
+2026-11-19T21:22:00.5834758Z  2026-11-19 21:17:18 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2026-11-19T21:22:00.5835131Z  2026-11-19 21:17:18 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2026-11-19T21:22:00.5835465Z  2026-11-19 21:17:18 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2026-11-19T21:22:00.5835726Z  2026-11-19 21:17:18 0 [Note] InnoDB: log sequence number 45450; transaction id 15
+2026-11-19T21:22:00.5836017Z  2026-11-19 21:17:18 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2026-11-19T21:22:00.5836367Z  2026-11-19 21:17:18 0 [Note] Plugin 'FEEDBACK' is disabled.
+2026-11-19T21:22:00.5836601Z  2026-11-19 21:17:18 0 [Note] Plugin 'wsrep-provider' is disabled.
+2026-11-19T21:22:00.5836944Z  2026-11-19 21:17:18 0 [Note] InnoDB: Buffer pool(s) load completed at 261119 21:17:18
+2026-11-19T21:22:00.5837223Z  2026-11-19 21:17:19 0 [Note] Server socket created on IP: '0.0.0.0', port: '3306'.
+2026-11-19T21:22:00.5837554Z  2026-11-19 21:17:19 0 [Note] Server socket created on IP: '::', port: '3306'.
+2026-11-19T21:22:00.5837811Z  2026-11-19 21:17:19 0 [Note] mariadbd: Event Scheduler: Loaded 0 events
+2026-11-19T21:22:00.5838047Z  2026-11-19 21:17:19 0 [Note] mariadbd: ready for connections.
+2026-11-19T21:22:00.5838361Z  Version: '12.3.3-MariaDB-ubu2404'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2026-11-19T21:22:00.5838715Z  2026-11-19 21:17:20 3 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5839182Z  2026-11-19 21:17:24 4 [Warning] Aborted connection 4 to db: 'unconnected' user: 'unauthenticated' host: '172.18.0.1' (This connection closed normally without authentication)
+2026-11-19T21:22:00.5839618Z  2026-11-19 21:17:25 5 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5839930Z  2026-11-19 21:17:30 6 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5840249Z  2026-11-19 21:17:35 7 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5840557Z  2026-11-19 21:17:40 8 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5840865Z  2026-11-19 21:17:45 9 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5841171Z  2026-11-19 21:17:50 10 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5841487Z  2026-11-19 21:17:55 11 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5841901Z  2026-11-19 21:18:00 12 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5842212Z  2026-11-19 21:18:05 13 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5842518Z  2026-11-19 21:18:10 14 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5842826Z  2026-11-19 21:18:15 15 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5843132Z  2026-11-19 21:18:20 16 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5843437Z  2026-11-19 21:18:25 17 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5843743Z  2026-11-19 21:18:30 18 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5844051Z  2026-11-19 21:18:35 19 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5844375Z  2026-11-19 21:18:40 20 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5844681Z  2026-11-19 21:18:45 21 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5844996Z  2026-11-19 21:18:50 22 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5845301Z  2026-11-19 21:18:55 23 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5845606Z  2026-11-19 21:19:00 24 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5846065Z  2026-11-19 21:19:05 25 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5846543Z  2026-11-19 21:19:10 26 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5847021Z  2026-11-19 21:19:15 27 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5847831Z  2026-11-19 21:19:21 28 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5848199Z  2026-11-19 21:19:26 29 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5848525Z  2026-11-19 21:19:31 30 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5848849Z  2026-11-19 21:19:36 31 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5849157Z  2026-11-19 21:19:41 32 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5849469Z  2026-11-19 21:19:46 33 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5849790Z  2026-11-19 21:19:51 34 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5850115Z  2026-11-19 21:19:56 35 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5850443Z  2026-11-19 21:20:01 36 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5850755Z  2026-11-19 21:20:06 37 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5851070Z  2026-11-19 21:20:11 38 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5851377Z  2026-11-19 21:20:16 39 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5851692Z  2026-11-19 21:20:21 40 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5852004Z  2026-11-19 21:20:26 41 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5852311Z  2026-11-19 21:20:31 42 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5852620Z  2026-11-19 21:20:36 43 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5852943Z  2026-11-19 21:20:41 44 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5853371Z  2026-11-19 21:20:46 45 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5853665Z  2026-11-19 21:20:51 46 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5853961Z  2026-11-19 21:20:56 47 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5854257Z  2026-11-19 21:21:01 48 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5854557Z  2026-11-19 21:21:06 49 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5854860Z  2026-11-19 21:21:11 50 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5855155Z  2026-11-19 21:21:17 62 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5855459Z  2026-11-19 21:21:22 102 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5855762Z  2026-11-19 21:21:27 103 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5856064Z  2026-11-19 21:21:32 104 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5856368Z  2026-11-19 21:21:37 105 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5856672Z  2026-11-19 21:21:42 106 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5856978Z  2026-11-19 21:21:47 107 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5857346Z  2026-11-19 21:21:52 108 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5857793Z  2026-11-19 21:21:57 109 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2026-11-19T21:22:00.5858174Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-11-19T21:22:00.5858494Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:12.3.3+maria~ubu2404 started.
+2026-11-19T21:22:00.5859546Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Initializing database files
+2026-11-19T21:22:00.5859793Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Database files initialized
+2026-11-19T21:22:00.5860031Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Starting temporary server
+2026-11-19T21:22:00.5860275Z  2026-11-19 21:17:15+00:00 [Note] [Entrypoint]: Waiting for server startup
+2026-11-19T21:22:00.5860513Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Temporary server started.
+2026-11-19T21:22:00.5860752Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Creating database nextcloud
+2026-11-19T21:22:00.5860992Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Creating user nextcloud
+2026-11-19T21:22:00.5861264Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Giving user nextcloud access to schema nextcloud
+2026-11-19T21:22:00.5861607Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+2026-11-19T21:22:00.5861871Z  
+2026-11-19T21:22:00.5862031Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Stopping temporary server
+2026-11-19T21:22:00.5862275Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: Temporary server stopped
+2026-11-19T21:22:00.5862463Z  
+2026-11-19T21:22:00.5862645Z  2026-11-19 21:17:18+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+2026-11-19T21:22:00.5862856Z  
+2026-11-19T21:22:00.5863762Z Stop and remove container: 710387d08e0144a3b08bfb0895c4b2f3_mariadb123_f3bdab
+2026-11-19T21:22:00.5864239Z ##[command]/usr/bin/docker rm --force 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:22:00.9159845Z 69060185b2d9eec03500297d7e128ad0c51f2ca0c5fc2bf63cf3d01a18ff4888
+2026-11-19T21:22:00.9168496Z Print service container logs: 6f7e7c0089f94135b346613346a7b969_postgres18_8f3f1a
+2026-11-19T21:22:00.9169112Z ##[command]/usr/bin/docker logs --details 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:22:00.9527992Z  The files belonging to this database system will be owned by user "postgres".
+2026-11-19T21:22:00.9528497Z  This user must also own the server process.
+2026-11-19T21:22:00.9528781Z  initdb: warning: enabling "trust" authentication for local connections
+2026-11-19T21:22:00.9529098Z  
+2026-11-19T21:22:00.9529612Z  The database cluster will be initialized with locale "en_US.utf8".
+2026-11-19T21:22:00.9530122Z  The default database encoding has accordingly been set to "UTF8".
+2026-11-19T21:22:00.9530602Z  The default text search configuration will be set to "english".
+2026-11-19T21:22:00.9530989Z  
+2026-11-19T21:22:00.9531222Z  Data page checksums are enabled.
+2026-11-19T21:22:00.9531503Z  
+2026-11-19T21:22:00.9532968Z  fixing permissions on existing directory /var/lib/postgresql/18/docker ... ok
+2026-11-19T21:22:00.9533481Z  creating subdirectories ... ok
+2026-11-19T21:22:00.9533834Z  selecting dynamic shared memory implementation ... posix
+2026-11-19T21:22:00.9534240Z  selecting default "max_connections" ... 100
+2026-11-19T21:22:00.9534596Z  selecting default "shared_buffers" ... 128MB
+2026-11-19T21:22:00.9534924Z  selecting default time zone ... Etc/UTC
+2026-11-19T21:22:00.9535224Z  creating configuration files ... ok
+2026-11-19T21:22:00.9535539Z  running bootstrap script ... ok
+2026-11-19T21:22:00.9535876Z  performing post-bootstrap initialization ... ok
+2026-11-19T21:22:00.9536576Z  initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+2026-11-19T21:22:00.9537700Z  2026-11-19 21:17:17.272 UTC [1] LOG:  starting PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-11-19T21:22:00.9538629Z  2026-11-19 21:17:17.272 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-11-19T21:22:00.9541148Z  2026-11-19 21:17:17.272 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-11-19T21:22:00.9541821Z  2026-11-19 21:17:17.273 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-11-19T21:22:00.9542492Z  2026-11-19 21:17:17.274 UTC [82] LOG:  database system was shut down at 2026-11-19 21:17:17 UTC
+2026-11-19T21:22:00.9543163Z  2026-11-19 21:17:17.276 UTC [1] LOG:  database system is ready to accept connections
+2026-11-19T21:22:00.9543672Z  2026-11-19 21:17:17.343 UTC [93] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9549275Z  2026-11-19 21:17:22.394 UTC [101] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9558250Z  2026-11-19 21:17:27.446 UTC [110] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9560385Z  2026-11-19 21:17:32.485 UTC [118] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9560800Z  2026-11-19 21:17:37.521 UTC [126] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9561180Z  2026-11-19 21:17:42.564 UTC [134] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9561563Z  2026-11-19 21:17:47.605 UTC [143] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9561948Z  2026-11-19 21:17:52.643 UTC [151] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9562343Z  2026-11-19 21:17:57.678 UTC [159] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9562733Z  2026-11-19 21:18:02.715 UTC [167] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9563131Z  2026-11-19 21:18:07.755 UTC [175] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9563502Z  2026-11-19 21:18:12.790 UTC [183] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9563900Z  2026-11-19 21:18:17.824 UTC [192] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9564316Z  2026-11-19 21:18:22.912 UTC [200] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9564710Z  2026-11-19 21:18:27.951 UTC [208] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9565105Z  2026-11-19 21:18:32.983 UTC [217] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9566724Z  2026-11-19 21:18:38.025 UTC [225] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9567078Z  2026-11-19 21:18:43.059 UTC [233] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9567504Z  2026-11-19 21:18:48.092 UTC [242] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9567858Z  2026-11-19 21:18:53.127 UTC [250] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9568243Z  2026-11-19 21:18:58.166 UTC [258] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9568588Z  2026-11-19 21:19:03.202 UTC [266] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9568837Z  2026-11-19 21:19:08.240 UTC [274] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9569165Z  2026-11-19 21:19:13.273 UTC [282] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9569615Z  2026-11-19 21:19:18.315 UTC [291] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9570003Z  2026-11-19 21:19:23.359 UTC [299] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9570391Z  2026-11-19 21:19:28.401 UTC [307] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9570780Z  2026-11-19 21:19:33.442 UTC [315] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9571167Z  2026-11-19 21:19:38.488 UTC [322] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9571553Z  2026-11-19 21:19:43.530 UTC [330] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9571936Z  2026-11-19 21:19:48.573 UTC [339] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9572332Z  2026-11-19 21:19:53.615 UTC [347] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9572707Z  2026-11-19 21:19:58.672 UTC [355] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9573099Z  2026-11-19 21:20:03.713 UTC [363] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9573487Z  2026-11-19 21:20:08.754 UTC [371] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9574934Z  2026-11-19 21:20:13.797 UTC [379] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9575347Z  2026-11-19 21:20:18.844 UTC [388] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9575727Z  2026-11-19 21:20:23.904 UTC [395] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9576128Z  2026-11-19 21:20:28.939 UTC [403] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9576555Z  2026-11-19 21:20:33.972 UTC [411] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9576947Z  2026-11-19 21:20:39.010 UTC [419] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9577428Z  2026-11-19 21:20:44.055 UTC [427] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9577830Z  2026-11-19 21:20:49.095 UTC [436] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9578267Z  2026-11-19 21:20:54.137 UTC [444] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9578660Z  2026-11-19 21:20:59.172 UTC [452] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9580372Z  2026-11-19 21:21:04.215 UTC [460] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9580828Z  2026-11-19 21:21:09.267 UTC [467] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9581415Z  2026-11-19 21:21:14.322 UTC [475] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9582233Z  2026-11-19 21:21:19.370 UTC [487] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9582734Z  2026-11-19 21:21:24.426 UTC [538] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9583431Z  2026-11-19 21:21:24.607 UTC [529] ERROR:  duplicate key value violates unique constraint "mimetype_id_index"
+2026-11-19T21:22:00.9583925Z  2026-11-19 21:21:24.607 UTC [529] DETAIL:  Key (mimetype)=(image/png) already exists.
+2026-11-19T21:22:00.9584500Z  2026-11-19 21:21:24.607 UTC [529] STATEMENT:  INSERT INTO "oc_mimetypes" ("mimetype") VALUES($1)
+2026-11-19T21:22:00.9585033Z  2026-11-19 21:21:29.482 UTC [550] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9585550Z  2026-11-19 21:21:34.547 UTC [558] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9586256Z  2026-11-19 21:21:39.618 UTC [566] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9586797Z  2026-11-19 21:21:44.680 UTC [573] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9587372Z  2026-11-19 21:21:49.734 UTC [582] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9587912Z  2026-11-19 21:21:54.784 UTC [590] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9612168Z  2026-11-19 21:21:59.827 UTC [598] FATAL:  database "root" does not exist
+2026-11-19T21:22:00.9612635Z  syncing data to disk ... ok
+2026-11-19T21:22:00.9612866Z  
+2026-11-19T21:22:00.9613060Z  
+2026-11-19T21:22:00.9613345Z  Success. You can now start the database server using:
+2026-11-19T21:22:00.9613659Z  
+2026-11-19T21:22:00.9613940Z      pg_ctl -D /var/lib/postgresql/18/docker -l logfile start
+2026-11-19T21:22:00.9614266Z  
+2026-11-19T21:22:00.9614861Z  waiting for server to start....2026-11-19 21:17:16.970 UTC [60] LOG:  starting PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-11-19T21:22:00.9615663Z  2026-11-19 21:17:16.970 UTC [60] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-11-19T21:22:00.9616209Z  2026-11-19 21:17:16.972 UTC [66] LOG:  database system was shut down at 2026-11-19 21:17:16 UTC
+2026-11-19T21:22:00.9616688Z  2026-11-19 21:17:16.973 UTC [60] LOG:  database system is ready to accept connections
+2026-11-19T21:22:00.9617041Z   done
+2026-11-19T21:22:00.9617238Z  server started
+2026-11-19T21:22:00.9617563Z  CREATE DATABASE
+2026-11-19T21:22:00.9617773Z  
+2026-11-19T21:22:00.9617963Z  
+2026-11-19T21:22:00.9618316Z  /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+2026-11-19T21:22:00.9618721Z  
+2026-11-19T21:22:00.9619246Z  waiting for server to shut down...2026-11-19 21:17:17.159 UTC [60] LOG:  received fast shutdown request
+2026-11-19T21:22:00.9620123Z  .2026-11-19 21:17:17.159 UTC [60] LOG:  aborting any active transactions
+2026-11-19T21:22:00.9620712Z  2026-11-19 21:17:17.160 UTC [60] LOG:  background worker "logical replication launcher" (PID 69) exited with exit code 1
+2026-11-19T21:22:00.9621315Z  2026-11-19 21:17:17.161 UTC [64] LOG:  shutting down
+2026-11-19T21:22:00.9621716Z  2026-11-19 21:17:17.161 UTC [64] LOG:  checkpoint starting: shutdown immediate
+2026-11-19T21:22:00.9622867Z  2026-11-19 21:17:17.171 UTC [64] LOG:  checkpoint complete: wrote 952 buffers (5.8%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.011 s; sync files=303, longest=0.001 s, average=0.001 s; distance=4428 kB, estimate=4428 kB; lsn=0/1BC6EC0, redo lsn=0/1BC6EC0
+2026-11-19T21:22:00.9623959Z  2026-11-19 21:17:17.178 UTC [60] LOG:  database system is shut down
+2026-11-19T21:22:00.9624304Z   done
+2026-11-19T21:22:00.9624516Z  server stopped
+2026-11-19T21:22:00.9624742Z  
+2026-11-19T21:22:00.9625002Z  PostgreSQL init process complete; ready for start up.
+2026-11-19T21:22:00.9625323Z  
+2026-11-19T21:22:00.9626515Z Stop and remove container: 6f7e7c0089f94135b346613346a7b969_postgres18_8f3f1a
+2026-11-19T21:22:00.9627221Z ##[command]/usr/bin/docker rm --force 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:22:01.2890752Z 955a687c48455f5093c487c542c1cbf77f3c4c011486c9e37736ae4d7eb10c19
+2026-11-19T21:22:01.2902379Z Print service container logs: e9c7ee7bdf3b4e738603e684895cdd50_ghcriogvenzloraclefree23_62f7d8
+2026-11-19T21:22:01.2903162Z ##[command]/usr/bin/docker logs --details 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:22:01.3133237Z  CONTAINER: starting up...
+2026-11-19T21:22:01.3133829Z  CONTAINER: first database startup, initializing...
+2026-11-19T21:22:01.3134429Z  CONTAINER: uncompressing database data files, please wait...
+2026-11-19T21:22:01.3134974Z  CONTAINER: done uncompressing database data files, duration: 5 seconds.
+2026-11-19T21:22:01.3135512Z  CONTAINER: starting up Oracle Database...
+2026-11-19T21:22:01.3135883Z  
+2026-11-19T21:22:01.3136782Z  LSNRCTL for Linux: Version 23.26.4.0.0 - Production on 19-NOV-2026 21:17:23
+2026-11-19T21:22:01.3143498Z  
+2026-11-19T21:22:01.3143928Z  Copyright (c) 1991, 2026, Oracle.  All rights reserved.
+2026-11-19T21:22:01.3144298Z  
+2026-11-19T21:22:01.3144637Z  Starting /opt/oracle/product/26ai/dbhomeFree/bin/tnslsnr: please wait...
+2026-11-19T21:22:01.3145045Z  
+2026-11-19T21:22:01.3145300Z  TNSLSNR for Linux: Version 23.26.4.0.0 - Production
+2026-11-19T21:22:01.3145803Z  System parameter file is /opt/oracle/product/26ai/dbhomeFree/network/admin/listener.ora
+2026-11-19T21:22:01.3146423Z  Log messages written to /opt/oracle/diag/tnslsnr/0525ec8c3500/listener/alert/log.xml
+2026-11-19T21:22:01.3147000Z  Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+2026-11-19T21:22:01.3147601Z  Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0525ec8c3500)(PORT=1521)))
+2026-11-19T21:22:01.3148045Z  
+2026-11-19T21:22:01.3148373Z  Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC_FOR_FREE)))
+2026-11-19T21:22:01.3148786Z  STATUS of the LISTENER
+2026-11-19T21:22:01.3149048Z  ------------------------
+2026-11-19T21:22:01.3149311Z  Alias                     LISTENER
+2026-11-19T21:22:01.3149673Z  Version                   TNSLSNR for Linux: Version 23.26.4.0.0 - Production
+2026-11-19T21:22:01.3150075Z  Start Date                19-NOV-2026 21:17:23
+2026-11-19T21:22:01.3150417Z  Uptime                    0 days 0 hr. 0 min. 0 sec
+2026-11-19T21:22:01.3150739Z  Trace Level               off
+2026-11-19T21:22:01.3151045Z  Security                  ON: Local OS Authentication
+2026-11-19T21:22:01.3151377Z  SNMP                      OFF
+2026-11-19T21:22:01.3151646Z  Default Service           FREE
+2026-11-19T21:22:01.3152074Z  Listener Parameter File   /opt/oracle/product/26ai/dbhomeFree/network/admin/listener.ora
+2026-11-19T21:22:01.3152646Z  Listener Log File         /opt/oracle/diag/tnslsnr/0525ec8c3500/listener/alert/log.xml
+2026-11-19T21:22:01.3153492Z  Listening Endpoints Summary...
+2026-11-19T21:22:01.3153850Z    (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+2026-11-19T21:22:01.3154321Z    (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0525ec8c3500)(PORT=1521)))
+2026-11-19T21:22:01.3154733Z  The listener supports no services
+2026-11-19T21:22:01.3155038Z  The command completed successfully
+2026-11-19T21:22:01.3155330Z  ORACLE instance started.
+2026-11-19T21:22:01.3155578Z  
+2026-11-19T21:22:01.3155811Z  Total System Global Area 1603452272 bytes
+2026-11-19T21:22:01.3156120Z  Fixed Size		    5086576 bytes
+2026-11-19T21:22:01.3156397Z  Variable Size		  603979776 bytes
+2026-11-19T21:22:01.3156690Z  Database Buffers	  989855744 bytes
+2026-11-19T21:22:01.3156980Z  Redo Buffers		    4530176 bytes
+2026-11-19T21:22:01.3157261Z  Database mounted.
+2026-11-19T21:22:01.3157576Z  Database opened.
+2026-11-19T21:22:01.3157800Z  
+2026-11-19T21:22:01.3158014Z  ORACLE DATABASE VERSION
+2026-11-19T21:22:01.3158374Z  ------------------------------------------------------------------------------------
+2026-11-19T21:22:01.3158912Z  Oracle AI Database 26ai Free Release 23.26.4.0.0 - Develop, Learn, and Run for Free
+2026-11-19T21:22:01.3159342Z  Version 23.26.4.0.0
+2026-11-19T21:22:01.3159580Z  
+2026-11-19T21:22:01.3159779Z  
+2026-11-19T21:22:01.3159970Z  
+2026-11-19T21:22:01.3160217Z  CONTAINER: Resetting SYS and SYSTEM passwords.
+2026-11-19T21:22:01.3160531Z  
+2026-11-19T21:22:01.3160734Z  User altered.
+2026-11-19T21:22:01.3160953Z  
+2026-11-19T21:22:01.3161151Z  
+2026-11-19T21:22:01.3161351Z  User altered.
+2026-11-19T21:22:01.3161559Z  
+2026-11-19T21:22:01.3161757Z  
+2026-11-19T21:22:01.3161963Z  #########################
+2026-11-19T21:22:01.3162222Z  DATABASE IS READY TO USE!
+2026-11-19T21:22:01.3162481Z  #########################
+2026-11-19T21:22:01.3162725Z  
+2026-11-19T21:22:01.3162959Z  ####################################################################
+2026-11-19T21:22:01.3163393Z  CONTAINER: The following output is now from the alert_FREE.log file:
+2026-11-19T21:22:01.3163815Z  ####################################################################
+2026-11-19T21:22:01.3164466Z  ===========================================================
+2026-11-19T21:22:01.3164814Z  Dumping current patch information
+2026-11-19T21:22:01.3165128Z  ===========================================================
+2026-11-19T21:22:01.3165540Z  Unable to obtain current patch information due to error: 20013
+2026-11-19T21:22:01.3165935Z  ===========================================================
+2026-11-19T21:22:01.3166313Z  FREEPDB1(3):Autotune of undo retention is turned on. 
+2026-11-19T21:22:01.3166656Z  2026-11-19T21:17:27.444778+00:00
+2026-11-19T21:22:01.3167036Z  FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+2026-11-19T21:22:01.3167536Z  Completed: Pluggable database FREEPDB1 opened read write 
+2026-11-19T21:22:01.3167923Z  Completed: ALTER DATABASE OPEN
+2026-11-19T21:22:01.3168201Z  2026-11-19T21:17:28.034916+00:00
+2026-11-19T21:22:01.3168590Z  Thread 1 advanced to log sequence 11 (LGWR switch),  current SCN: 2265399
+2026-11-19T21:22:01.3169094Z    Current log# 1 seq# 11 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+2026-11-19T21:22:01.3169487Z  2026-11-19T21:17:28.128600+00:00
+2026-11-19T21:22:01.3170118Z  FREEPDB1(3):Resize operation completed for file# 23, fname /opt/oracle/oradata/FREE/FREEPDB1/undotbs01.dbf, old size 11264K, new size 21504K
+2026-11-19T21:22:01.3170752Z  2026-11-19T21:21:28.895976+00:00
+2026-11-19T21:22:01.3171060Z  Thread 1 cannot allocate new log, sequence 12
+2026-11-19T21:22:01.3171395Z  Checkpoint not complete
+2026-11-19T21:22:01.3171740Z    Current log# 1 seq# 11 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+2026-11-19T21:22:01.3172117Z  2026-11-19T21:21:31.891213+00:00
+2026-11-19T21:22:01.3172653Z  Resize operation completed for file# 1, fname /opt/oracle/oradata/FREE/system01.dbf, old size 971520K, new size 981760K
+2026-11-19T21:22:01.3173222Z  2026-11-19T21:21:31.896661+00:00
+2026-11-19T21:22:01.3173771Z  Thread 1 advanced to log sequence 12 (LGWR switch),  current SCN: 2268608
+2026-11-19T21:22:01.3174258Z    Current log# 2 seq# 12 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+2026-11-19T21:22:01.3174649Z  2026-11-19T21:21:40.760082+00:00
+2026-11-19T21:22:01.3175176Z  Resize operation completed for file# 1, fname /opt/oracle/oradata/FREE/system01.dbf, old size 981760K, new size 992000K
+2026-11-19T21:22:01.3176504Z Stop and remove container: e9c7ee7bdf3b4e738603e684895cdd50_ghcriogvenzloraclefree23_62f7d8
+2026-11-19T21:22:01.3177395Z ##[command]/usr/bin/docker rm --force 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:22:02.3606452Z 0525ec8c3500d1001538caa5ac28cfbf2941b905923583947daa4eb8e4aadeb2
+2026-11-19T21:22:02.3626305Z Remove container network: github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f
+2026-11-19T21:22:02.3630259Z ##[command]/usr/bin/docker network rm github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f
+2026-11-19T21:22:02.6661488Z github_network_d1d60f6a9aed4f57ae18bbbf1a40eb2f
+2026-11-19T21:22:02.6694238Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-19T21:22:02.6741912Z ##[group]Run '/job_completed.sh'
+2026-11-19T21:22:02.6773887Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:22:02.6774279Z env:
+2026-11-19T21:22:02.6774541Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 81403
+2026-11-19T21:22:02.6774868Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 1100
+2026-11-19T21:22:02.6775191Z   BLACKSMITH_CHECK_RUN_ID: 135888956738
+2026-11-19T21:22:02.6775607Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests for installer (blacksmith-4)
+2026-11-19T21:22:02.6776043Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:22:02.6776364Z ##[endgroup]
+2026-11-19T21:22:02.7032246Z 
+2026-11-19T21:22:02.7033402Z Cleaning up Docker resources before commit...
+2026-11-19T21:22:02.8509419Z Removing 4 dangling volume(s)...
+2026-11-19T21:22:03.3471643Z Docker cleanup phases:
+2026-11-19T21:22:03.3472561Z   containers      106ms
+2026-11-19T21:22:03.3472898Z   networks         19ms
+2026-11-19T21:22:03.3473155Z   volumes         129ms
+2026-11-19T21:22:03.3473405Z   builder         316ms
+2026-11-19T21:22:03.3473651Z   image_scan       68ms
+2026-11-19T21:22:03.3474183Z Docker cleanup complete: 0 container(s), 0 network(s), 4 volume(s), 0 image(s) removed
+2026-11-19T21:22:03.3474547Z 
+2026-11-19T21:22:03.3498440Z Docker container cache activated, computing hash...
+2026-11-19T21:22:03.3661356Z [docker-manifest] Image manifest: 22 image(s), 20390943108 bytes working set, 0 bytes evicted, 0 bytes reclaimable (deferred)
+2026-11-19T21:22:03.3725744Z Docker image hash computed:
+2026-11-19T21:22:03.3726130Z   current  279796fd97663b5e32a62597eec6a88e2827a731ef240ddd6333cf8c4d7e634b
+2026-11-19T21:22:03.3726507Z   stored   279796fd97663b5e32a62597eec6a88e2827a731ef240ddd6333cf8c4d7e634b
+2026-11-19T21:22:03.3726768Z Docker images to be cached:
+2026-11-19T21:22:03.3868329Z REPOSITORY                                                TAG             SIZE
+2026-11-19T21:22:03.3869093Z wp-env-bench-gutenberg-test-c16a8885-wordpress            latest          872MB
+2026-11-19T21:22:03.3869747Z wp-env-bench-gutenberg-test-c16a8885-cli                  latest          564MB
+2026-11-19T21:22:03.3870369Z wp-env-env-1-b01ca7e3-wordpress                           latest          872MB
+2026-11-19T21:22:03.3870974Z wp-env-env-2-e775f50d-wordpress                           latest          872MB
+2026-11-19T21:22:03.3871541Z wp-env-env-1-b01ca7e3-cli                                 latest          564MB
+2026-11-19T21:22:03.3872110Z wp-env-env-2-e775f50d-cli                                 latest          564MB
+2026-11-19T21:22:03.3872633Z postgres                                                  16-alpine       295MB
+2026-11-19T21:22:03.3873121Z postgres                                                  18              474MB
+2026-11-19T21:22:03.3873657Z ghcr.io/gvenzl/oracle-free                                23              2.85GB
+2026-11-19T21:22:03.3874192Z postgres                                                  16              468MB
+2026-11-19T21:22:03.3874642Z postgres                                                  <none>          474MB
+2026-11-19T21:22:03.3875114Z mariadb                                                   12.3            341MB
+2026-11-19T21:22:03.3875583Z mariadb                                                   lts             341MB
+2026-11-19T21:22:03.3876102Z documenso-dev-gotenberg                                   latest          1.36GB
+2026-11-19T21:22:03.3876617Z redis                                                     8-alpine        120MB
+2026-11-19T21:22:03.3877070Z redis                                                     alpine          120MB
+2026-11-19T21:22:03.3877586Z redis                                                     latest          146MB
+2026-11-19T21:22:03.3878043Z postgres                                                  15              445MB
+2026-11-19T21:22:03.3878542Z langwatch/langevals                                       latest          2.08GB
+2026-11-19T21:22:03.3879736Z mysql                                                     9.7             931MB
+2026-11-19T21:22:03.3880239Z clickhouse/clickhouse-server                              26.8.36.3       904MB
+2026-11-19T21:22:03.3880828Z ghcr.io/nextcloud/continuous-integration-shallow-server   latest          1.87GB
+2026-11-19T21:22:03.3881390Z inbucket/inbucket                                         latest          33.7MB
+2026-11-19T21:22:03.3881936Z mcr.microsoft.com/playwright                              v1.59.1-noble   2.41GB
+2026-11-19T21:22:03.3882496Z langwatch/opensearch-lite                                 latest          1.45GB
+2026-11-19T21:22:03.4207867Z Stopping docker service...
+2026-11-19T21:22:03.5284411Z Syncing filesystem...
+2026-11-19T21:22:03.6115938Z Unmounting /var/lib/docker...
+2026-11-19T21:22:03.7255511Z Docker shutdown phases:
+2026-11-19T21:22:03.7255911Z   docker_stop      72ms
+2026-11-19T21:22:03.7256167Z   sync             75ms
+2026-11-19T21:22:03.7256478Z   umount          186ms
+2026-11-19T21:22:03.7256729Z   total           335ms
+2026-11-19T21:22:03.7481587Z Docker container hash match - not committing
+2026-11-19T21:22:03.8013017Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-19T21:22:03.8093988Z Cleaning up orphan processes

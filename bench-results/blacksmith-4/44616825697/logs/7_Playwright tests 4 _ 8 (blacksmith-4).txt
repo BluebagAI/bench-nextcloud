@@ -1,0 +1,442 @@
+﻿2026-11-19T21:19:57.3181129Z Current runner version: '2.338.2'
+2026-11-19T21:19:57.3185811Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-wkci656xe3lx3gs2'
+2026-11-19T21:19:57.3186594Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-19T21:19:57.3187561Z Machine name: 'ip-172-31-73-130'
+2026-11-19T21:19:57.3189274Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:19:57.3189960Z Contents: read
+2026-11-19T21:19:57.3190330Z Metadata: read
+2026-11-19T21:19:57.3190772Z ##[endgroup]
+2026-11-19T21:19:57.3192590Z Secret source: Actions
+2026-11-19T21:19:57.3193250Z Cache mode: write
+2026-11-19T21:19:57.3193836Z Prepare workflow directory
+2026-11-19T21:19:57.3494612Z Prepare all required actions
+2026-11-19T21:19:57.3541194Z Getting action download info
+2026-11-19T21:19:57.7490658Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T21:19:57.8701642Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:19:57.9038145Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T21:19:58.4823836Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T21:19:59.1647979Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:19:59.7913838Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:20:00.5446692Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-19T21:20:00.5506391Z Complete job name: Playwright tests 4 / 8 (blacksmith-4)
+2026-11-19T21:20:00.6161722Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T21:20:00.6348416Z ##[group]Run '/setup.sh'
+2026-11-19T21:20:00.6384850Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:20:00.6385791Z env:
+2026-11-19T21:20:00.6386084Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:00.6386381Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:00.6386712Z   BLACKSMITH_CHECK_RUN_ID: 135888957087
+2026-11-19T21:20:00.6387126Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 4 / 8 (blacksmith-4)
+2026-11-19T21:20:00.6387685Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:20:00.6388052Z ##[endgroup]
+2026-11-19T21:20:00.6858984Z Logging daemon started (blacksmithd for logs)
+2026-11-19T21:20:00.7082297Z Results daemon started (blacksmithd for results)
+2026-11-19T21:20:00.7338900Z Background adoption and SSH setup started (PID: 3287)
+2026-11-19T21:20:00.7339663Z 
+2026-11-19T21:20:00.7340369Z ----------------------------------------
+2026-11-19T21:20:00.7341064Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44616825697/jobs/135888957087
+2026-11-19T21:20:00.7341549Z SSH Access (using your GitHub SSH key):
+2026-11-19T21:20:00.7342119Z   ssh -p 64006 runner@blacksmith-4vcpu-ubuntu-2404-wkci656xe3lx3gs2.vm.blacksmith.sh
+2026-11-19T21:20:00.7352677Z 
+2026-11-19T21:20:00.7353167Z No GitHub SSH key? Add one at:
+2026-11-19T21:20:00.7353852Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-19T21:20:00.7354250Z 
+2026-11-19T21:20:00.7354408Z ----------------------------------------
+2026-11-19T21:20:00.7354620Z 
+2026-11-19T21:20:00.7354860Z VM ID: blacksmith-4vcpu-ubuntu-2404-wkci656xe3lx3gs2
+2026-11-19T21:20:00.7355184Z Host: production-192.240.241.167-x8664
+2026-11-19T21:20:00.7355458Z Host Agent PID: 667630
+2026-11-19T21:20:00.7355702Z Host Agent Git SHA: 0116ed667
+2026-11-19T21:20:00.7355973Z Host CPU Manufacturer: AuthenticAMD
+2026-11-19T21:20:00.7356309Z Blacksmith Host Generation: gen 2
+2026-11-19T21:20:00.7356653Z Petname: production-bursting-racer-41468509
+2026-11-19T21:20:00.7357857Z Region: us-west
+2026-11-19T21:20:00.7358250Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-19T21:20:00.7361636Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-19T21:20:00.7362748Z 
+2026-11-19T21:20:00.7362969Z Enabling Blacksmith transparent cache
+2026-11-19T21:20:00.7751274Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T21:20:00.7751855Z with:
+2026-11-19T21:20:00.7752499Z   key: playwright-context-44616825697
+2026-11-19T21:20:00.7752921Z   path: ./
+2026-11-19T21:20:00.7753215Z   enableCrossOsArchive: false
+2026-11-19T21:20:00.7753565Z   fail-on-cache-miss: false
+2026-11-19T21:20:00.7753865Z   lookup-only: false
+2026-11-19T21:20:00.7754120Z env:
+2026-11-19T21:20:00.7754392Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:00.7754758Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:00.7755112Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:00.7755469Z ##[endgroup]
+2026-11-19T21:20:01.2363135Z Cache hit for: playwright-context-44616825697
+2026-11-19T21:20:02.0843351Z Received 306386907 of 306386907 (100.0%), 368.5 MBs/sec
+2026-11-19T21:20:02.0845905Z Cache Size: ~292 MB (306386907 B)
+2026-11-19T21:20:02.0987784Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/59ec9d79-75b9-4c58-9e0f-dc0d5cd806f5/cache.tzst -P -C /home/runner/_work/bench-nextcloud/bench-nextcloud --use-compress-program unzstd
+2026-11-19T21:20:04.8149082Z Cache restored successfully
+2026-11-19T21:20:04.8645739Z Cache restored from key: playwright-context-44616825697
+2026-11-19T21:20:04.8985423Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T21:20:04.8986083Z with:
+2026-11-19T21:20:04.8986362Z   path: ./package.json
+2026-11-19T21:20:04.8986744Z env:
+2026-11-19T21:20:04.8987055Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:04.8987451Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:04.8987829Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:04.8988215Z ##[endgroup]
+2026-11-19T21:20:05.0290461Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T21:20:05.0291006Z with:
+2026-11-19T21:20:05.0291263Z   node-version: ^24.0.0
+2026-11-19T21:20:05.0291563Z   check-latest: false
+2026-11-19T21:20:05.0294104Z   token: ***
+2026-11-19T21:20:05.0294476Z   package-manager-cache: true
+2026-11-19T21:20:05.0294839Z env:
+2026-11-19T21:20:05.0295115Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:05.0295523Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:05.0295881Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:05.0296217Z ##[endgroup]
+2026-11-19T21:20:05.2300495Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-19T21:20:05.3495972Z ##[group]Environment details
+2026-11-19T21:20:05.7125072Z node: v24.22.1
+2026-11-19T21:20:05.7125595Z npm: 11.19.1
+2026-11-19T21:20:05.7125866Z yarn: 1.22.22
+2026-11-19T21:20:05.7127377Z ##[endgroup]
+2026-11-19T21:20:05.7294827Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T21:20:05.7295248Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T21:20:05.7348629Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:05.7349096Z env:
+2026-11-19T21:20:05.7349357Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:05.7349722Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:05.7350080Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:05.7350395Z ##[endgroup]
+2026-11-19T21:20:09.1588887Z 
+2026-11-19T21:20:09.1623828Z changed 23 packages in 3s
+2026-11-19T21:20:09.1624823Z 
+2026-11-19T21:20:09.1646374Z 15 packages are looking for funding
+2026-11-19T21:20:09.1684449Z   run `npm fund` for details
+2026-11-19T21:20:09.2029569Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T21:20:09.2030173Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T21:20:09.2067096Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:09.2067426Z env:
+2026-11-19T21:20:09.2067703Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:09.2068045Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:09.2068370Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:09.2068709Z ##[endgroup]
+2026-11-19T21:20:09.3445630Z ##[group]Run npm run playwright -- --shard='4/8' --reporter=list,json
+2026-11-19T21:20:09.3446345Z [36;1mnpm run playwright -- --shard='4/8' --reporter=list,json[0m
+2026-11-19T21:20:09.3481672Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:09.3482034Z env:
+2026-11-19T21:20:09.3482303Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:20:09.3482680Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:20:09.3483047Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:09.3483565Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/_work/bench-nextcloud/bench-nextcloud/results.json
+2026-11-19T21:20:09.3484018Z ##[endgroup]
+2026-11-19T21:20:09.4409937Z 
+2026-11-19T21:20:09.4410829Z > nextcloud@1.0.0 playwright
+2026-11-19T21:20:09.4411720Z > playwright test --project=default --project=admin-settings --shard=4/8 --reporter=list,json
+2026-11-19T21:20:09.4412166Z 
+2026-11-19T21:20:10.3798372Z [WebServer] 
+2026-11-19T21:20:10.3800458Z [WebServer] Pulling images… ⏳
+2026-11-19T21:20:13.2016338Z [WebServer] └─ Done
+2026-11-19T21:20:13.2017404Z [WebServer] 
+2026-11-19T21:20:13.2018368Z [WebServer] Checking running containers… 🔍
+2026-11-19T21:20:13.2149044Z [WebServer] └─ None found!
+2026-11-19T21:20:13.2150128Z [WebServer] 
+2026-11-19T21:20:13.2150840Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T21:20:13.2151165Z [WebServer] ├─ Using branch 'master'
+2026-11-19T21:20:13.5622635Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T21:20:13.5623790Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T21:20:23.0084724Z [WebServer] └─ Done
+2026-11-19T21:20:23.0085270Z [WebServer] 
+2026-11-19T21:20:23.0087635Z [WebServer] Configuring Nextcloud…
+2026-11-19T21:20:23.3582517Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T21:20:23.6612338Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T21:20:24.0103703Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T21:20:24.3333910Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T21:20:24.6608113Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T21:20:24.9642641Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T21:20:24.9731390Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T21:20:25.9202159Z [WebServer] │  └─ OK !
+2026-11-19T21:20:25.9202797Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T21:20:26.2927366Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T21:20:26.2927797Z [WebServer] 
+2026-11-19T21:20:26.2928051Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T21:20:26.3515941Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T21:20:26.6606739Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T21:20:26.9715566Z [WebServer] ├─ Disabled app store
+2026-11-19T21:20:27.2743070Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T21:20:27.2743657Z [WebServer] ├─ Initialize cron job...
+2026-11-19T21:21:16.6218366Z [WebServer] │  └─ OK !
+2026-11-19T21:21:16.6218880Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T21:21:18.1358554Z 
+2026-11-19T21:21:18.1359246Z Running 57 tests using 1 worker, shard 4 of 8
+2026-11-19T21:21:18.1359559Z 
+2026-11-19T21:21:22.8485224Z   ✓   1 [default] › tests/playwright/e2e/files/files-download.spec.ts:169:2 › Files: Download files using selection › can download multiple selected files (3.6s)
+2026-11-19T21:21:25.8282518Z   ✓   2 [default] › tests/playwright/e2e/files/files-download.spec.ts:192:2 › Files: Download files using selection › can download selected files with special characters (3.0s)
+2026-11-19T21:21:30.2350480Z   ✓   3 [default] › tests/playwright/e2e/files/files-download.spec.ts:219:2 › Files: Download files using selection › can download selected files with email uid (4.4s)
+2026-11-19T21:21:32.9866288Z   ✓   4 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:33:2 › Files: Favorites › marks a file as favorite from the row actions (2.7s)
+2026-11-19T21:21:36.0979921Z   ✓   5 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:45:2 › Files: Favorites › un-marks a file as favorite from the row actions (3.1s)
+2026-11-19T21:21:39.2561867Z   ✓   6 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:62:2 › Files: Favorites › shows favorite folders in the navigation (3.1s)
+2026-11-19T21:21:44.6374039Z   ✓   7 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:79:2 › Files: Favorites › marks a folder as favorite from the sidebar (5.4s)
+2026-11-19T21:21:47.1506736Z   ✓   8 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:23:2 › files: Filter in files list › filters current view by name (2.5s)
+2026-11-19T21:21:49.8639320Z   ✓   9 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:34:2 › files: Filter in files list › can reset name filter (2.7s)
+2026-11-19T21:21:52.6382675Z   ✓  10 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:47:2 › files: Filter in files list › filters current view by type (2.8s)
+2026-11-19T21:21:55.4945784Z   ✓  11 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:62:2 › files: Filter in files list › can reset filter by type (2.8s)
+2026-11-19T21:21:58.7507187Z   ✓  12 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:78:2 › files: Filter in files list › can reset filter by clicking chip button (3.2s)
+2026-11-19T21:22:02.1293126Z   ✓  13 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:91:2 › files: Filter in files list › keeps type filter when changing the directory (3.4s)
+2026-11-19T21:22:05.8780260Z   ✓  14 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:108:2 › files: Filter in files list › keeps filter state when changing the directory (3.7s)
+2026-11-19T21:22:09.2110902Z   ✓  15 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:132:2 › files: Filter in files list › resets name filter when changing the directory (3.3s)
+2026-11-19T21:22:12.6448398Z   ✓  16 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:143:2 › files: Filter in files list › resets filter when changing the view (3.4s)
+2026-11-19T21:22:15.8935892Z   ✓  17 [default] › tests/playwright/e2e/files/files-navigation.spec.ts:17:2 › Files: Navigation › shows root folder and can navigate to a deeply nested folder (3.2s)
+2026-11-19T21:22:19.5806007Z   ✓  18 [default] › tests/playwright/e2e/files/files-navigation.spec.ts:25:2 › Files: Navigation › highlights the previous folder when navigating back and forward (3.7s)
+2026-11-19T21:22:23.3262302Z   ✓  19 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:17:2 › Files: Rename nodes › can rename a file (3.7s)
+2026-11-19T21:22:26.6839797Z   ✓  20 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:35:2 › Files: Rename nodes › only selects basename of file on rename open (3.3s)
+2026-11-19T21:22:30.0623096Z   ✓  21 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:50:2 › Files: Rename nodes › shows validation error on invalid filename (3.4s)
+2026-11-19T21:22:33.1745998Z   ✓  22 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:62:2 › Files: Rename nodes › shows accessible loading state while rename MOVE is in-flight (3.1s)
+2026-11-19T21:22:36.1424886Z   ✓  23 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:98:2 › Files: Rename nodes › cancel renaming on Escape (2.9s)
+2026-11-19T21:22:39.2267416Z   ✓  24 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:115:2 › Files: Rename nodes › cancel renaming on Enter when name is unchanged (3.1s)
+2026-11-19T21:22:44.8272140Z   ✓  25 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:134:2 › Files: Rename nodes › correctly resets renaming state after virtual-scroll re-render (5.6s)
+2026-11-19T21:22:47.9003212Z   ✓  26 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:178:2 › Files: Rename nodes › shows extension-change warning — keep new extension (3.0s)
+2026-11-19T21:22:50.8486835Z   ✓  27 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:193:2 › Files: Rename nodes › shows extension-change warning — keep old extension (2.9s)
+2026-11-19T21:22:54.0809569Z   ✓  28 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:208:2 › Files: Rename nodes › shows extension-removal warning (3.2s)
+2026-11-19T21:22:57.4328583Z   ✓  29 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:224:2 › Files: Rename nodes › does not show extension warning when renaming a folder with a dot (3.3s)
+2026-11-19T21:23:00.0760510Z   ✓  30 [default] › tests/playwright/e2e/files/files-selection.spec.ts:31:2 › Files: Select files › selects and deselects all files (2.6s)
+2026-11-19T21:23:02.6027543Z   ✓  31 [default] › tests/playwright/e2e/files/files-selection.spec.ts:44:2 › Files: Select files › selects an arbitrary subset of files (2.5s)
+2026-11-19T21:23:05.1637278Z   ✓  32 [default] › tests/playwright/e2e/files/files-selection.spec.ts:55:2 › Files: Select files › selects a range of files with the shift key (2.5s)
+2026-11-19T21:23:07.7777980Z   ✓  33 [default] › tests/playwright/e2e/files/files-settings.spec.ts:10:2 › files: Set default view › Defaults to the "files" view (2.6s)
+2026-11-19T21:23:11.1920084Z   ✓  34 [default] › tests/playwright/e2e/files/files-settings.spec.ts:20:2 › files: Set default view › Can set it to personal files (3.4s)
+2026-11-19T21:23:13.7457319Z   ✓  35 [default] › tests/playwright/e2e/files/files-settings.spec.ts:55:4 › files: Hide or show hidden files › view: All files › hides dot-files by default (2.5s)
+2026-11-19T21:23:17.3809426Z   ✓  36 [default] › tests/playwright/e2e/files/files-settings.spec.ts:63:4 › files: Hide or show hidden files › view: All files › can show hidden files (3.6s)
+2026-11-19T21:23:20.1352070Z   ✓  37 [default] › tests/playwright/e2e/files/files-settings.spec.ts:55:4 › files: Hide or show hidden files › view: Personal files › hides dot-files by default (2.7s)
+2026-11-19T21:23:25.1319876Z   ✓  38 [default] › tests/playwright/e2e/files/files-settings.spec.ts:63:4 › files: Hide or show hidden files › view: Personal files › can show hidden files (5.0s)
+2026-11-19T21:23:28.2034160Z   ✓  39 [default] › tests/playwright/e2e/files/files-settings.spec.ts:79:3 › files: Hide or show hidden files › view: Recent files › hides dot-files by default (3.0s)
+2026-11-19T21:23:31.6470004Z   ✓  40 [default] › tests/playwright/e2e/files/files-settings.spec.ts:88:3 › files: Hide or show hidden files › view: Recent files › can show hidden files (3.4s)
+2026-11-19T21:23:34.6011144Z   ✓  41 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:18:2 › Files: Sidebar › opens the sidebar (2.9s)
+2026-11-19T21:23:37.7654056Z   ✓  42 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:27:2 › Files: Sidebar › changes the current fileid (3.1s)
+2026-11-19T21:23:41.5012345Z   ✓  43 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:36:2 › Files: Sidebar › changes the sidebar content on other file (3.7s)
+2026-11-19T21:23:44.9525109Z   ✓  44 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:50:2 › Files: Sidebar › closes the sidebar on navigation (3.4s)
+2026-11-19T21:23:48.6126670Z   ✓  45 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:63:2 › Files: Sidebar › closes the sidebar on delete (3.6s)
+2026-11-19T21:24:04.9510077Z   ✘  46 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:84:2 › Files: Sidebar › changes the fileid on delete (13.3s)
+2026-11-19T21:24:21.6953705Z   ✘  47 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:84:2 › Files: Sidebar › changes the fileid on delete (retry #1) (15.4s)
+2026-11-19T21:24:25.7358791Z   ✓  48 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:12:2 › Files: Sorting the file list › Files are sorted by name ascending by default (3.3s)
+2026-11-19T21:24:29.1938820Z   ✓  49 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:35:2 › Files: Sorting the file list › Filenames with numbers are sorted by name ascending by default (3.4s)
+2026-11-19T21:24:33.6057023Z   ✓  50 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:53:2 › Files: Sorting the file list › Can sort by size (4.4s)
+2026-11-19T21:24:36.6640938Z   ✓  51 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:82:2 › Files: Sorting the file list › Can sort by mtime (3.0s)
+2026-11-19T21:24:39.7602166Z   ✓  52 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:99:2 › Files: Sorting the file list › Favorites are sorted first (3.1s)
+2026-11-19T21:24:43.5623689Z   ✓  53 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:138:2 › Files: Sorting the file list › Sorting works after switching view twice (3.8s)
+2026-11-19T21:24:47.5131568Z   ✓  54 [default] › tests/playwright/e2e/files/files-xml-regression.spec.ts:15:2 › Files: XML entities in file names › renames a file to a name with XML entities and keeps it after reload (3.9s)
+2026-11-19T21:24:51.6859819Z   ✓  55 [default] › tests/playwright/e2e/files/files-xml-regression.spec.ts:37:2 › Files: XML entities in file names › can delete a file whose name contains XML entities (4.2s)
+2026-11-19T21:24:54.9631881Z   ✓  56 [default] › tests/playwright/e2e/files/files.spec.ts:11:2 › Files › Login with a user and open the files app (3.3s)
+2026-11-19T21:24:58.5096505Z   ✓  57 [default] › tests/playwright/e2e/files/files.spec.ts:16:2 › Files › Opens a valid file shows it as active (3.5s)
+2026-11-19T21:25:01.8602514Z   ✓  58 [default] › tests/playwright/e2e/files/files.spec.ts:28:2 › Files › Opens a valid folder shows its content (3.3s)
+2026-11-19T21:25:02.2612021Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:25:02.2621323Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:25:02.5481980Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:25:02.5534661Z 
+2026-11-19T21:25:02.5538104Z 
+2026-11-19T21:25:02.5548018Z   1) [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:84:2 › Files: Sidebar › changes the fileid on delete 
+2026-11-19T21:25:02.5548659Z 
+2026-11-19T21:25:02.5549082Z     TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+2026-11-19T21:25:02.5549508Z 
+2026-11-19T21:25:02.5549775Z        96 | 		await expect(filesSidebar.heading('other')).toBeVisible()
+2026-11-19T21:25:02.5550250Z        97 |
+2026-11-19T21:25:02.5550603Z     >  98 | 		const deleteResponse = page.waitForResponse(
+2026-11-19T21:25:02.5551071Z           | 		                            ^
+2026-11-19T21:25:02.5551698Z        99 | 			(response) => response.url().includes(`/remote.php/dav/files/${user.userId}/folder/other`)
+2026-11-19T21:25:02.5552333Z       100 | 				&& response.request().method() === 'DELETE',
+2026-11-19T21:25:02.5552761Z       101 | 			{ timeout: 10000 },
+2026-11-19T21:25:02.5553459Z         at /home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/e2e/files/files-sidebar.spec.ts:98:31
+2026-11-19T21:25:02.5553979Z 
+2026-11-19T21:25:02.5554142Z     Error: locator.click: Test ended.
+2026-11-19T21:25:02.5554478Z     Call log:
+2026-11-19T21:25:02.5554964Z       - waiting for locator('#nc-vue-46').locator('[data-cy-files-list-row-action="delete"] button')
+2026-11-19T21:25:02.5556264Z         - locator resolved to <button title="" type="button" role="menuitem" data-v-6c2daf4e="" class="action-button button-vue focusable">…</button>
+2026-11-19T21:25:02.5557006Z       - attempting click action
+2026-11-19T21:25:02.5557559Z         2 × waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5558010Z           - element is not stable
+2026-11-19T21:25:02.5558373Z         - retrying click action
+2026-11-19T21:25:02.5558686Z         - waiting 20ms
+2026-11-19T21:25:02.5559074Z         - waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5559661Z         - element is not stable
+2026-11-19T21:25:02.5560027Z       - retrying click action
+2026-11-19T21:25:02.5560326Z         - waiting 100ms
+2026-11-19T21:25:02.5560692Z         - waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5561166Z       - element was detached from the DOM, retrying
+2026-11-19T21:25:02.5561426Z 
+2026-11-19T21:25:02.5561435Z 
+2026-11-19T21:25:02.5561623Z        at ../support/sections/FilesListPage.ts:259
+2026-11-19T21:25:02.5561876Z 
+2026-11-19T21:25:02.5562156Z       257 | 		const actionEntry = this.getActionButtonInMenu(menu, actionId)
+2026-11-19T21:25:02.5562726Z       258 | 		await actionEntry.waitFor({ state: 'visible' })
+2026-11-19T21:25:02.5563168Z     > 259 | 		await actionEntry.click()
+2026-11-19T21:25:02.5563522Z           | 		                  ^
+2026-11-19T21:25:02.5563821Z       260 | 	}
+2026-11-19T21:25:02.5564060Z       261 |
+2026-11-19T21:25:02.5564298Z       262 | 	/**
+2026-11-19T21:25:02.5565127Z         at FilesListPage.triggerActionForRow (/home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/support/sections/FilesListPage.ts:259:21)
+2026-11-19T21:25:02.5566398Z         at FilesListPage.triggerActionForFile (/home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/support/sections/FilesListPage.ts:277:3)
+2026-11-19T21:25:02.5567491Z         at /home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/e2e/files/files-sidebar.spec.ts:104:3
+2026-11-19T21:25:02.5567979Z 
+2026-11-19T21:25:02.5568504Z     Error Context: test-results/files-files-sidebar-Files--70fd7-hanges-the-fileid-on-delete-default/error-context.md
+2026-11-19T21:25:02.5569055Z 
+2026-11-19T21:25:02.5570316Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2026-11-19T21:25:02.5570893Z 
+2026-11-19T21:25:02.5571278Z     TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+2026-11-19T21:25:02.5571704Z 
+2026-11-19T21:25:02.5571968Z        96 | 		await expect(filesSidebar.heading('other')).toBeVisible()
+2026-11-19T21:25:02.5572369Z        97 |
+2026-11-19T21:25:02.5572711Z     >  98 | 		const deleteResponse = page.waitForResponse(
+2026-11-19T21:25:02.5573103Z           | 		                            ^
+2026-11-19T21:25:02.5573667Z        99 | 			(response) => response.url().includes(`/remote.php/dav/files/${user.userId}/folder/other`)
+2026-11-19T21:25:02.5574314Z       100 | 				&& response.request().method() === 'DELETE',
+2026-11-19T21:25:02.5574698Z       101 | 			{ timeout: 10000 },
+2026-11-19T21:25:02.5575344Z         at /home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/e2e/files/files-sidebar.spec.ts:98:31
+2026-11-19T21:25:02.5575807Z 
+2026-11-19T21:25:02.5575965Z     Error: locator.click: Test ended.
+2026-11-19T21:25:02.5576268Z     Call log:
+2026-11-19T21:25:02.5576782Z       - waiting for locator('#nc-vue-46').locator('[data-cy-files-list-row-action="delete"] button')
+2026-11-19T21:25:02.5577973Z         - locator resolved to <button title="" type="button" role="menuitem" data-v-6c2daf4e="" class="action-button button-vue focusable">…</button>
+2026-11-19T21:25:02.5592479Z       - attempting click action
+2026-11-19T21:25:02.5592924Z         - waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5593357Z         - element is not stable
+2026-11-19T21:25:02.5593677Z       - retrying click action
+2026-11-19T21:25:02.5594085Z         - waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5594522Z         - element is not visible
+2026-11-19T21:25:02.5594850Z       - retrying click action
+2026-11-19T21:25:02.5595147Z         - waiting 20ms
+2026-11-19T21:25:02.5595537Z         - waiting for element to be visible, enabled and stable
+2026-11-19T21:25:02.5595997Z       - element was detached from the DOM, retrying
+2026-11-19T21:25:02.5596178Z 
+2026-11-19T21:25:02.5596184Z 
+2026-11-19T21:25:02.5596308Z        at ../support/sections/FilesListPage.ts:259
+2026-11-19T21:25:02.5596584Z 
+2026-11-19T21:25:02.5596757Z       257 | 		const actionEntry = this.getActionButtonInMenu(menu, actionId)
+2026-11-19T21:25:02.5597122Z       258 | 		await actionEntry.waitFor({ state: 'visible' })
+2026-11-19T21:25:02.5597381Z     > 259 | 		await actionEntry.click()
+2026-11-19T21:25:02.5597598Z           | 		                  ^
+2026-11-19T21:25:02.5597784Z       260 | 	}
+2026-11-19T21:25:02.5597937Z       261 |
+2026-11-19T21:25:02.5598091Z       262 | 	/**
+2026-11-19T21:25:02.5598574Z         at FilesListPage.triggerActionForRow (/home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/support/sections/FilesListPage.ts:259:21)
+2026-11-19T21:25:02.5599337Z         at FilesListPage.triggerActionForFile (/home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/support/sections/FilesListPage.ts:277:3)
+2026-11-19T21:25:02.5603236Z         at /home/runner/_work/bench-nextcloud/bench-nextcloud/tests/playwright/e2e/files/files-sidebar.spec.ts:104:3
+2026-11-19T21:25:02.5603709Z 
+2026-11-19T21:25:02.5604226Z     Error Context: test-results/files-files-sidebar-Files--70fd7-hanges-the-fileid-on-delete-default-retry1/error-context.md
+2026-11-19T21:25:02.5604558Z 
+2026-11-19T21:25:02.5605061Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+2026-11-19T21:25:02.5605660Z     test-results/files-files-sidebar-Files--70fd7-hanges-the-fileid-on-delete-default-retry1/trace.zip
+2026-11-19T21:25:02.5606074Z     Usage:
+2026-11-19T21:25:02.5606228Z 
+2026-11-19T21:25:02.5606794Z         npx playwright show-trace test-results/files-files-sidebar-Files--70fd7-hanges-the-fileid-on-delete-default-retry1/trace.zip
+2026-11-19T21:25:02.5607382Z 
+2026-11-19T21:25:02.5608155Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-19T21:25:02.5608596Z 
+2026-11-19T21:25:02.5608704Z   1 failed
+2026-11-19T21:25:02.5609372Z     [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:84:2 › Files: Sidebar › changes the fileid on delete 
+2026-11-19T21:25:02.5610154Z   56 passed (4.9m)
+2026-11-19T21:25:02.5816985Z ##[error]Process completed with exit code 1.
+2026-11-19T21:25:02.5896416Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:25:02.5896898Z with:
+2026-11-19T21:25:02.5897145Z   name: results-blacksmith-4-4
+2026-11-19T21:25:02.5897445Z   path: results.json
+2026-11-19T21:25:02.5897698Z   retention-days: 30
+2026-11-19T21:25:02.5897961Z   if-no-files-found: ignore
+2026-11-19T21:25:02.5898141Z   compression-level: 6
+2026-11-19T21:25:02.5898304Z   overwrite: false
+2026-11-19T21:25:02.5898472Z   include-hidden-files: false
+2026-11-19T21:25:02.5898655Z   archive: true
+2026-11-19T21:25:02.5898802Z env:
+2026-11-19T21:25:02.5898993Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:25:02.5899202Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:25:02.5899417Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:25:02.5899700Z ##[endgroup]
+2026-11-19T21:25:02.7332862Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:25:02.7337440Z Artifact name is valid!
+2026-11-19T21:25:02.7338008Z Root directory input is valid!
+2026-11-19T21:25:03.0972283Z Uploading artifact: results-blacksmith-4-4.zip
+2026-11-19T21:25:03.1009084Z Beginning upload of artifact content to blob storage
+2026-11-19T21:25:03.3867679Z Uploaded bytes 7466
+2026-11-19T21:25:03.4518110Z Finished uploading artifact content to blob storage!
+2026-11-19T21:25:03.4519097Z SHA256 digest of uploaded artifact is 5ce208d7c41fa613f2568513811ab6e8c97c9b3dee84b3c27114c6a429cad2b2
+2026-11-19T21:25:03.4519999Z Finalizing artifact upload
+2026-11-19T21:25:04.0069682Z Artifact results-blacksmith-4-4 successfully finalized. Artifact ID 14575757612
+2026-11-19T21:25:04.0071490Z Artifact results-blacksmith-4-4 has been successfully uploaded! Final size is 7466 bytes. Artifact ID is 14575757612
+2026-11-19T21:25:04.0072539Z Artifact download URL: https://github.com/BluebagAI/bench-nextcloud/actions/runs/44616825697/artifacts/14575757612
+2026-11-19T21:25:04.0230753Z ##[group]Run for id in $(docker ps -aq); do
+2026-11-19T21:25:04.0231190Z [36;1mfor id in $(docker ps -aq); do[0m
+2026-11-19T21:25:04.0231646Z [36;1m  docker container inspect "$id" --format '=== Logs for container {{.Name}} ==='[0m
+2026-11-19T21:25:04.0232101Z [36;1m  docker logs "$id" >> nextcloud.log[0m
+2026-11-19T21:25:04.0232400Z [36;1mdone[0m
+2026-11-19T21:25:04.0232659Z [36;1mecho '=== Nextcloud server logs ==='[0m
+2026-11-19T21:25:04.0233104Z [36;1mdocker exec nextcloud-e2e-test-server_server cat data/nextcloud.log[0m
+2026-11-19T21:25:04.0333492Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:25:04.0333865Z env:
+2026-11-19T21:25:04.0334117Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:25:04.0334451Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:25:04.0334829Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:25:04.0335150Z ##[endgroup]
+2026-11-19T21:25:04.0597251Z === Nextcloud server logs ===
+2026-11-19T21:25:04.0752098Z Error response from daemon: No such container: nextcloud-e2e-test-server_server
+2026-11-19T21:25:04.0780006Z ##[error]Process completed with exit code 1.
+2026-11-19T21:25:04.0834248Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-19T21:25:04.0867454Z ##[group]Run '/job_completed.sh'
+2026-11-19T21:25:04.0890060Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:25:04.0890436Z env:
+2026-11-19T21:25:04.0890687Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 294
+2026-11-19T21:25:04.0890987Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 975
+2026-11-19T21:25:04.0891281Z   BLACKSMITH_CHECK_RUN_ID: 135888957087
+2026-11-19T21:25:04.0891663Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 4 / 8 (blacksmith-4)
+2026-11-19T21:25:04.0892071Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:25:04.0892339Z ##[endgroup]
+2026-11-19T21:25:04.1120183Z 
+2026-11-19T21:25:04.1121104Z Cleaning up Docker resources before commit...
+2026-11-19T21:25:04.1901682Z Removing 1 dangling volume(s)...
+2026-11-19T21:25:04.5522461Z Docker cleanup phases:
+2026-11-19T21:25:04.5522902Z   containers       38ms
+2026-11-19T21:25:04.5523297Z   networks         16ms
+2026-11-19T21:25:04.5523549Z   volumes          31ms
+2026-11-19T21:25:04.5523797Z   builder         183ms
+2026-11-19T21:25:04.5524063Z   image_scan      167ms
+2026-11-19T21:25:04.5524638Z Docker cleanup complete: 0 container(s), 0 network(s), 1 volume(s), 0 image(s) removed
+2026-11-19T21:25:04.5525026Z 
+2026-11-19T21:25:04.5591045Z Docker container cache activated, computing hash...
+2026-11-19T21:25:04.5830033Z [docker-manifest] Image manifest: 23 image(s), 21859604095 bytes working set, 0 bytes evicted, 0 bytes reclaimable (deferred)
+2026-11-19T21:25:04.5918777Z Docker image hash computed:
+2026-11-19T21:25:04.5919623Z   current  43cfda87f72dd474faa7f3b919c9770a39ded5cf5010f2f6291274ed951ab60b
+2026-11-19T21:25:04.5920344Z   stored   43cfda87f72dd474faa7f3b919c9770a39ded5cf5010f2f6291274ed951ab60b
+2026-11-19T21:25:04.5920796Z Docker images to be cached:
+2026-11-19T21:25:04.6093664Z REPOSITORY                                                TAG             SIZE
+2026-11-19T21:25:04.6094336Z fcc-api                                                   latest          1.47GB
+2026-11-19T21:25:04.6094962Z wp-env-bench-gutenberg-test-c16a8885-wordpress            latest          872MB
+2026-11-19T21:25:04.6095644Z wp-env-bench-gutenberg-test-c16a8885-cli                  latest          564MB
+2026-11-19T21:25:04.6096294Z wp-env-env-1-b01ca7e3-wordpress                           latest          872MB
+2026-11-19T21:25:04.6096909Z wp-env-env-2-e775f50d-wordpress                           latest          872MB
+2026-11-19T21:25:04.6097506Z wp-env-env-1-b01ca7e3-cli                                 latest          564MB
+2026-11-19T21:25:04.6098110Z wp-env-env-2-e775f50d-cli                                 latest          564MB
+2026-11-19T21:25:04.6098662Z postgres                                                  16-alpine       295MB
+2026-11-19T21:25:04.6099170Z postgres                                                  18              474MB
+2026-11-19T21:25:04.6099733Z ghcr.io/gvenzl/oracle-free                                23              2.85GB
+2026-11-19T21:25:04.6100324Z postgres                                                  16              468MB
+2026-11-19T21:25:04.6100839Z postgres                                                  <none>          474MB
+2026-11-19T21:25:04.6101350Z mariadb                                                   12.3            341MB
+2026-11-19T21:25:04.6101858Z mariadb                                                   lts             341MB
+2026-11-19T21:25:04.6102417Z documenso-dev-gotenberg                                   latest          1.36GB
+2026-11-19T21:25:04.6102963Z redis                                                     8-alpine        120MB
+2026-11-19T21:25:04.6104034Z redis                                                     alpine          120MB
+2026-11-19T21:25:04.6104530Z redis                                                     latest          146MB
+2026-11-19T21:25:04.6105033Z postgres                                                  15              445MB
+2026-11-19T21:25:04.6105796Z langwatch/langevals                                       latest          2.08GB
+2026-11-19T21:25:04.6106335Z mysql                                                     9.7             931MB
+2026-11-19T21:25:04.6106890Z clickhouse/clickhouse-server                              26.8.36.3       904MB
+2026-11-19T21:25:04.6107533Z ghcr.io/nextcloud/continuous-integration-shallow-server   latest          1.87GB
+2026-11-19T21:25:04.6108156Z inbucket/inbucket                                         latest          33.7MB
+2026-11-19T21:25:04.6108750Z mcr.microsoft.com/playwright                              v1.59.1-noble   2.41GB
+2026-11-19T21:25:04.6109361Z langwatch/opensearch-lite                                 latest          1.45GB
+2026-11-19T21:25:04.6528976Z Stopping docker service...
+2026-11-19T21:25:04.7339094Z Syncing filesystem...
+2026-11-19T21:25:04.8175295Z Unmounting /var/lib/docker...
+2026-11-19T21:25:04.8810091Z Docker shutdown phases:
+2026-11-19T21:25:04.8810467Z   docker_stop      78ms
+2026-11-19T21:25:04.8810755Z   sync             48ms
+2026-11-19T21:25:04.8811009Z   umount          140ms
+2026-11-19T21:25:04.8811252Z   total           267ms
+2026-11-19T21:25:04.9101570Z Docker container hash match - not committing
+2026-11-19T21:25:04.9788639Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-19T21:25:04.9888236Z Cleaning up orphan processes

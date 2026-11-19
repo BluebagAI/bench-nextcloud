@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-19T21:28:51+00:00",
+ "suite": "nextcloud",
+ "repo": "BluebagAI/bench-nextcloud",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-nextcloud/actions/runs/44616825697",
+ "run_id": 44616825697,
+ "sha": "3af9e8eacade880993c85cf3b175d53108652ea0",
+ "conclusion": "failure",
+ "wall_s": 804,
+ "queue_s": 12,
+ "job_s": 3347,
+ "jobs": 10,
+ "job_max_s": 506,
+ "vcpu_min": 223.1,
+ "billed_min": 59,
+ "usd": 0.472,
+ "tests": {
+  "passed": 461,
+  "failed": 1,
+  "flaky": 1,
+  "skipped": 1,
+  "failed_tests": [
+   "files/files-sidebar.spec.ts::changes the fileid on delete::default"
+  ],
+  "flaky_tests": [
+   "appstore/admin-settings-apps.spec.ts::Can enable an installed app::admin-settings"
+  ],
+  "files": 9
+ }
+}

@@ -1,0 +1,326 @@
+﻿2026-11-19T21:19:58.0057997Z Current runner version: '2.338.2'
+2026-11-19T21:19:58.0064729Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-di35ab6jmwk5dtue'
+2026-11-19T21:19:58.0065565Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-19T21:19:58.0066984Z Machine name: 'ip-172-31-73-130'
+2026-11-19T21:19:58.0068919Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:19:58.0069959Z Contents: read
+2026-11-19T21:19:58.0070355Z Metadata: read
+2026-11-19T21:19:58.0070728Z ##[endgroup]
+2026-11-19T21:19:58.0072703Z Secret source: Actions
+2026-11-19T21:19:58.0073549Z Cache mode: write
+2026-11-19T21:19:58.0074120Z Prepare workflow directory
+2026-11-19T21:19:58.0366717Z Prepare all required actions
+2026-11-19T21:19:58.0402631Z Getting action download info
+2026-11-19T21:19:58.4106100Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T21:19:58.5141728Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:19:58.5466692Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T21:19:59.0876017Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T21:19:59.8883165Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:20:00.5292962Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:20:01.3920273Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-19T21:20:01.4008065Z Complete job name: Playwright tests 6 / 8 (blacksmith-4)
+2026-11-19T21:20:01.5030812Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T21:20:01.5135281Z ##[group]Run '/setup.sh'
+2026-11-19T21:20:01.5152149Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:20:01.5152597Z env:
+2026-11-19T21:20:01.5152749Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:01.5152976Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:01.5153178Z   BLACKSMITH_CHECK_RUN_ID: 135888957179
+2026-11-19T21:20:01.5153410Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 6 / 8 (blacksmith-4)
+2026-11-19T21:20:01.5153636Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:20:01.5153814Z ##[endgroup]
+2026-11-19T21:20:01.5719215Z Logging daemon started (blacksmithd for logs)
+2026-11-19T21:20:01.5932959Z Results daemon started (blacksmithd for results)
+2026-11-19T21:20:01.6381020Z Background adoption and SSH setup started (PID: 3274)
+2026-11-19T21:20:01.6381697Z 
+2026-11-19T21:20:01.6382131Z ----------------------------------------
+2026-11-19T21:20:01.6382878Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44616825697/jobs/135888957179
+2026-11-19T21:20:01.6383329Z SSH Access (using your GitHub SSH key):
+2026-11-19T21:20:01.6383835Z   ssh -p 64006 runner@blacksmith-4vcpu-ubuntu-2404-di35ab6jmwk5dtue.vm.blacksmith.sh
+2026-11-19T21:20:01.6384227Z 
+2026-11-19T21:20:01.6384357Z No GitHub SSH key? Add one at:
+2026-11-19T21:20:01.6384766Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-19T21:20:01.6385521Z 
+2026-11-19T21:20:01.6385682Z ----------------------------------------
+2026-11-19T21:20:01.6385871Z 
+2026-11-19T21:20:01.6386046Z VM ID: blacksmith-4vcpu-ubuntu-2404-di35ab6jmwk5dtue
+2026-11-19T21:20:01.6386415Z Host: production-192.240.254.126-x8664
+2026-11-19T21:20:01.6386755Z Host Agent PID: 2245127
+2026-11-19T21:20:01.6387077Z Host Agent Git SHA: 0116ed667
+2026-11-19T21:20:01.6387406Z Host CPU Manufacturer: AuthenticAMD
+2026-11-19T21:20:01.6387699Z Blacksmith Host Generation: gen 2
+2026-11-19T21:20:01.6388007Z Petname: production-fresh-muskox-2c5ad109
+2026-11-19T21:20:01.6389445Z Region: us-west
+2026-11-19T21:20:01.6389743Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-19T21:20:01.6420438Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-19T21:20:01.6421993Z 
+2026-11-19T21:20:01.6422751Z Enabling Blacksmith transparent cache
+2026-11-19T21:20:01.6907008Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T21:20:01.6907491Z with:
+2026-11-19T21:20:01.6907726Z   key: playwright-context-44616825697
+2026-11-19T21:20:01.6907990Z   path: ./
+2026-11-19T21:20:01.6908207Z   enableCrossOsArchive: false
+2026-11-19T21:20:01.6908482Z   fail-on-cache-miss: false
+2026-11-19T21:20:01.6908714Z   lookup-only: false
+2026-11-19T21:20:01.6908927Z env:
+2026-11-19T21:20:01.6909125Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:01.6909390Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:01.6909686Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:01.6909969Z ##[endgroup]
+2026-11-19T21:20:02.2298966Z Cache hit for: playwright-context-44616825697
+2026-11-19T21:20:03.2318851Z Received 306386907 of 306386907 (100.0%), 305.6 MBs/sec
+2026-11-19T21:20:03.2457130Z Cache Size: ~292 MB (306386907 B)
+2026-11-19T21:20:03.2679267Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/bee1ad9d-79e5-42d3-bfb2-649913cb3ef2/cache.tzst -P -C /home/runner/_work/bench-nextcloud/bench-nextcloud --use-compress-program unzstd
+2026-11-19T21:20:06.1753012Z Cache restored successfully
+2026-11-19T21:20:06.2524625Z Cache restored from key: playwright-context-44616825697
+2026-11-19T21:20:06.2798661Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T21:20:06.2799231Z with:
+2026-11-19T21:20:06.2799484Z   path: ./package.json
+2026-11-19T21:20:06.2799749Z env:
+2026-11-19T21:20:06.2799976Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:06.2800292Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:06.2800623Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:06.2800958Z ##[endgroup]
+2026-11-19T21:20:06.4154024Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T21:20:06.4154698Z with:
+2026-11-19T21:20:06.4154958Z   node-version: ^24.0.0
+2026-11-19T21:20:06.4155260Z   check-latest: false
+2026-11-19T21:20:06.4157456Z   token: ***
+2026-11-19T21:20:06.4157699Z   package-manager-cache: true
+2026-11-19T21:20:06.4157979Z env:
+2026-11-19T21:20:06.4158269Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:06.4158578Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:06.4158899Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:06.4159199Z ##[endgroup]
+2026-11-19T21:20:06.5846391Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-19T21:20:06.7138930Z ##[group]Environment details
+2026-11-19T21:20:07.0792637Z node: v24.22.1
+2026-11-19T21:20:07.0795686Z npm: 11.19.1
+2026-11-19T21:20:07.0798186Z yarn: 1.22.22
+2026-11-19T21:20:07.0801741Z ##[endgroup]
+2026-11-19T21:20:07.1118731Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T21:20:07.1119231Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T21:20:07.1166420Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:07.1166889Z env:
+2026-11-19T21:20:07.1167200Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:07.1167534Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:07.1167857Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:07.1168171Z ##[endgroup]
+2026-11-19T21:20:11.2971496Z 
+2026-11-19T21:20:11.2979952Z changed 23 packages in 4s
+2026-11-19T21:20:11.2980509Z 
+2026-11-19T21:20:11.2980706Z 15 packages are looking for funding
+2026-11-19T21:20:11.2980995Z   run `npm fund` for details
+2026-11-19T21:20:11.3366356Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T21:20:11.3366769Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T21:20:11.3381384Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:11.3381610Z env:
+2026-11-19T21:20:11.3381852Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:11.3382120Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:11.3382372Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:11.3382638Z ##[endgroup]
+2026-11-19T21:20:11.4867926Z ##[group]Run npm run playwright -- --shard='6/8' --reporter=list,json
+2026-11-19T21:20:11.4868585Z [36;1mnpm run playwright -- --shard='6/8' --reporter=list,json[0m
+2026-11-19T21:20:11.4888596Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:20:11.4888936Z env:
+2026-11-19T21:20:11.4889211Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:20:11.4889530Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:20:11.4889824Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:20:11.4890146Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/_work/bench-nextcloud/bench-nextcloud/results.json
+2026-11-19T21:20:11.4890469Z ##[endgroup]
+2026-11-19T21:20:11.6044090Z 
+2026-11-19T21:20:11.6045581Z > nextcloud@1.0.0 playwright
+2026-11-19T21:20:11.6046331Z > playwright test --project=default --project=admin-settings --shard=6/8 --reporter=list,json
+2026-11-19T21:20:11.6046695Z 
+2026-11-19T21:20:12.6223154Z [WebServer] 
+2026-11-19T21:20:12.6225410Z [WebServer] Pulling images… ⏳
+2026-11-19T21:20:15.0663549Z [WebServer] └─ Done
+2026-11-19T21:20:15.0664131Z [WebServer] 
+2026-11-19T21:20:15.0664812Z [WebServer] Checking running containers… 🔍
+2026-11-19T21:20:15.0745173Z [WebServer] └─ None found!
+2026-11-19T21:20:15.0746126Z [WebServer] 
+2026-11-19T21:20:15.0746835Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T21:20:15.0747450Z [WebServer] ├─ Using branch 'master'
+2026-11-19T21:20:15.3226690Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T21:20:15.3229471Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T21:20:22.7031551Z [WebServer] └─ Done
+2026-11-19T21:20:22.7048520Z [WebServer] 
+2026-11-19T21:20:22.7052355Z [WebServer] Configuring Nextcloud…
+2026-11-19T21:20:23.0538446Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T21:20:23.3865262Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T21:20:23.6895402Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T21:20:24.0856892Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T21:20:24.5134787Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T21:20:24.8609906Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T21:20:24.8763842Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T21:20:26.0617578Z [WebServer] │  └─ OK !
+2026-11-19T21:20:26.0618091Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T21:20:26.4424016Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T21:20:26.4424887Z [WebServer] 
+2026-11-19T21:20:26.4425261Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T21:20:26.5162723Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T21:20:26.8639834Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T21:20:27.2156265Z [WebServer] ├─ Disabled app store
+2026-11-19T21:20:27.5715643Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T21:20:27.5716163Z [WebServer] ├─ Initialize cron job...
+2026-11-19T21:20:53.0200404Z [WebServer] │  └─ OK !
+2026-11-19T21:20:53.0201421Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T21:20:55.6877569Z 
+2026-11-19T21:20:55.6879042Z Running 58 tests using 1 worker, shard 6 of 8
+2026-11-19T21:20:55.6879315Z 
+2026-11-19T21:21:00.6075675Z   ✓   1 [default] › tests/playwright/e2e/files_trashbin/files.spec.ts:46:2 › files_trashbin: download files › does not offer bulk download (3.6s)
+2026-11-19T21:21:03.9163308Z   ✓   2 [default] › tests/playwright/e2e/files_trashbin/files.spec.ts:57:2 › files_trashbin: file row › shows data for a file deleted by the owner (3.3s)
+2026-11-19T21:21:10.8580037Z   ✓   3 [default] › tests/playwright/e2e/files_trashbin/files.spec.ts:67:2 › files_trashbin: file row › shows data for a file deleted by a sharee in a group share (6.9s)
+2026-11-19T21:21:14.9723114Z   ✓   4 [default] › tests/playwright/e2e/files_versions/version-creation.spec.ts:18:2 › files_versions: versions creation › opens the versions panel and shows the three versions (4.1s)
+2026-11-19T21:21:19.5046266Z   ✓   5 [default] › tests/playwright/e2e/files_versions/version-creation.spec.ts:24:2 › files_versions: versions creation › shows yourself as the version author (4.5s)
+2026-11-19T21:21:31.6685254Z   ✓   6 [default] › tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts:128:2 › files_versions: versions across a share move/copy › moves the versions when the file is moved out of a received share (12.1s)
+2026-11-19T21:21:43.0828128Z   ✓   7 [default] › tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts:138:2 › files_versions: versions across a share move/copy › copies the versions when the file is copied out of a received share (11.4s)
+2026-11-19T21:21:57.6644608Z   ✓   8 [default] › tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts:149:2 › files_versions: versions across a share move/copy › moves the versions when a containing folder is moved out of a received share (14.6s)
+2026-11-19T21:22:09.7106716Z   ✓   9 [default] › tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts:163:2 › files_versions: versions across a share move/copy › copies the versions when a containing folder is copied out of a received share (12.0s)
+2026-11-19T21:22:13.4535454Z   ✓  10 [default] › tests/playwright/e2e/files_versions/version-deletion.spec.ts:20:2 › files_versions: versions deletion › deletes the initial version of an own file (3.7s)
+2026-11-19T21:22:18.0575879Z   ✓  11 [default] › tests/playwright/e2e/files_versions/version-deletion.spec.ts:34:2 › files_versions: versions deletion › deletes versions of a shared file with delete permission (4.6s)
+2026-11-19T21:22:23.8092090Z   ✓  12 [default] › tests/playwright/e2e/files_versions/version-deletion.spec.ts:50:2 › files_versions: versions deletion › cannot delete versions of a shared file without delete permission (5.7s)
+2026-11-19T21:22:28.2386818Z   ✓  13 [default] › tests/playwright/e2e/files_versions/version-download.spec.ts:17:2 › files_versions: versions download › downloads versions of an own file and asserts their content (4.4s)
+2026-11-19T21:22:34.9144688Z   ✓  14 [default] › tests/playwright/e2e/files_versions/version-download.spec.ts:29:2 › files_versions: versions download › downloads versions of a shared file with download permission (6.7s)
+2026-11-19T21:22:41.0946735Z   ✓  15 [default] › tests/playwright/e2e/files_versions/version-download.spec.ts:43:2 › files_versions: versions download › does not offer download of a shared file without download permission (6.2s)
+2026-11-19T21:22:46.6329713Z   ✓  16 [default] › tests/playwright/e2e/files_versions/version-expiration.spec.ts:30:2 › files_versions: versions expiration › expires all but the current version (5.5s)
+2026-11-19T21:22:54.4938905Z   ✓  17 [default] › tests/playwright/e2e/files_versions/version-expiration.spec.ts:42:2 › files_versions: versions expiration › keeps named versions when expiring (7.8s)
+2026-11-19T21:23:00.9089988Z   ✓  18 [default] › tests/playwright/e2e/files_versions/version-naming.spec.ts:20:2 › files_versions: versions naming › names the versions of an own file (6.4s)
+2026-11-19T21:23:09.5136047Z   ✓  19 [default] › tests/playwright/e2e/files_versions/version-naming.spec.ts:40:2 › files_versions: versions naming › names the versions of a shared file with edit permission (8.6s)
+2026-11-19T21:23:17.3388744Z   ✓  20 [default] › tests/playwright/e2e/files_versions/version-naming.spec.ts:62:2 › files_versions: versions naming › cannot name versions of a shared file without edit permission (7.8s)
+2026-11-19T21:23:24.3709278Z   ✓  21 [default] › tests/playwright/e2e/files_versions/version-restoration.spec.ts:39:2 › files_versions: versions restoration › restores the initial version of an own file (7.0s)
+2026-11-19T21:23:33.8781485Z   ✓  22 [default] › tests/playwright/e2e/files_versions/version-restoration.spec.ts:55:2 › files_versions: versions restoration › restores versions of a shared file with update permission (9.5s)
+2026-11-19T21:23:42.4959192Z   ✓  23 [default] › tests/playwright/e2e/files_versions/version-restoration.spec.ts:71:2 › files_versions: versions restoration › cannot restore versions of a shared file without update permission (8.6s)
+2026-11-19T21:23:49.6789353Z   ✓  24 [default] › tests/playwright/e2e/files_versions/version-sharing.spec.ts:19:2 › files_versions: versions on shares › shows the version author display name to the sharee (7.2s)
+2026-11-19T21:23:52.1786314Z   ✓  25 [default] › tests/playwright/e2e/login/login-redirect.spec.ts:25:2 › Login: Redirect › redirects to login with redirect_url when session expires (1.6s)
+2026-11-19T21:23:54.3961003Z   ✓  26 [default] › tests/playwright/e2e/login/login-redirect.spec.ts:42:2 › Login: Redirect › redirect_url parameter redirects to the original page after login (1.7s)
+2026-11-19T21:23:57.1656906Z   ✓  27 [default] › tests/playwright/e2e/login/login.spec.ts:40:2 › Login › successful login lands on the dashboard (2.3s)
+2026-11-19T21:23:59.6303811Z   ✓  28 [default] › tests/playwright/e2e/login/login.spec.ts:48:2 › Login › wrong password shows error and marks both fields invalid (2.4s)
+2026-11-19T21:24:02.1697395Z   ✓  29 [default] › tests/playwright/e2e/login/login.spec.ts:59:2 › Login › wrong account name shows error and marks both fields invalid (2.5s)
+2026-11-19T21:24:04.6836331Z   ✓  30 [default] › tests/playwright/e2e/login/login.spec.ts:70:2 › Login › disabled account shows disabled error (2.5s)
+2026-11-19T21:24:08.1465842Z   ✓  31 [default] › tests/playwright/e2e/login/login.spec.ts:81:2 › Login › logout redirects to the login page (2.9s)
+2026-11-19T21:24:12.6164265Z   ✓  32 [default] › tests/playwright/e2e/login/webauth.spec.ts:46:2 › Login: WebAuthn › add and delete a WebAuthn device (4.4s)
+2026-11-19T21:24:16.9384941Z   ✓  33 [default] › tests/playwright/e2e/login/webauth.spec.ts:79:2 › Login: WebAuthn › add a WebAuthn device and use it to log in (4.3s)
+2026-11-19T21:24:19.8580315Z   ✓  34 [default] › tests/playwright/e2e/settings/access-levels.spec.ts:12:2 › Settings: Access levels – regular user › cannot see the Administration section in the settings navigation (2.9s)
+2026-11-19T21:24:23.3532213Z   ✓  35 [default] › tests/playwright/e2e/settings/access-levels.spec.ts:28:2 › Settings: Access levels – admin user › can see the Administration section in the settings navigation (3.5s)
+2026-11-19T21:24:29.0994708Z   ✓  36 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:17:2 › Settings: Devices & sessions › revokes every other session but keeps the current one (5.7s)
+2026-11-19T21:24:33.9957951Z   ✓  37 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:38:2 › Settings: Devices & sessions › revokes several devices at once (4.9s)
+2026-11-19T21:24:37.4691149Z   ✓  38 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:51:2 › Settings: Devices & sessions › offers nothing to revoke when only the current session exists (3.4s)
+2026-11-19T21:24:41.4720991Z   ✓  39 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:59:2 › Settings: Devices & sessions › keeps every session when the confirmation is dismissed (4.0s)
+2026-11-19T21:24:48.2124366Z   ✓  40 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:71:2 › Settings: Devices & sessions › creates an app password with limited access and changes it (6.7s)
+2026-11-19T21:24:54.0394840Z   ✓  41 [default] › tests/playwright/e2e/settings/devices-sessions.spec.ts:81:2 › Settings: Devices & sessions › limits an app password to picked areas and apps (5.8s)
+2026-11-19T21:24:58.2197326Z   ✓  42 [default] › tests/playwright/e2e/settings/password.spec.ts:18:2 › Settings: Change password › changes the password (4.1s)
+2026-11-19T21:25:01.7508275Z   ✓  43 [default] › tests/playwright/e2e/settings/password.spec.ts:31:2 › Settings: Change password › rejects a wrong current password (3.5s)
+2026-11-19T21:25:07.7485695Z   ✓  44 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:387:3 › Settings: Change personal information › Language & locale › can change language (4.8s)
+2026-11-19T21:25:13.4868628Z   ✓  45 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:397:3 › Settings: Change personal information › Language & locale › can change locale (5.7s)
+2026-11-19T21:25:19.3323700Z   ✓  46 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:411:3 › Settings: Change personal information › Language & locale › can change the first day of week (4.8s)
+2026-11-19T21:25:24.4758727Z   ✓  47 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:24:2 › Settings: Change personal information › can enable and disable the profile (4.8s)
+2026-11-19T21:25:27.8717346Z   ✓  48 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:46:2 › Settings: Change personal information › can open the own profile from the settings (3.4s)
+2026-11-19T21:25:34.4948255Z   ✓  49 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:58:2 › Settings: Change personal information › can set primary email and change its scope (6.6s)
+2026-11-19T21:25:40.8652348Z   ✓  50 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:82:2 › Settings: Change personal information › can delete primary email (6.3s)
+2026-11-19T21:25:51.1707588Z   ✓  51 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:101:2 › Settings: Change personal information › can set and delete additional emails (10.3s)
+2026-11-19T21:25:58.3305759Z   ✓  52 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:135:2 › Settings: Change personal information › can set full name and change its scope (7.1s)
+2026-11-19T21:26:05.8579985Z   ✓  53 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:154:2 › Settings: Change personal information › can set phone number and its scope (7.5s)
+2026-11-19T21:26:13.3708690Z   ✓  54 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:168:2 › Settings: Change personal information › can set phone number with phone region (7.5s)
+2026-11-19T21:26:21.2092468Z   ✓  55 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:187:2 › Settings: Change personal information › can reset phone number (7.8s)
+2026-11-19T21:26:29.4872276Z   ✓  56 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:204:2 › Settings: Change personal information › can set website and change its scope (8.2s)
+2026-11-19T21:26:37.0330849Z   ✓  57 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:229:2 › Settings: Change personal information › can set the Fediverse handle and change its scope (7.5s)
+2026-11-19T21:26:46.9323350Z   ✓  58 [default] › tests/playwright/e2e/settings/personal-info.spec.ts:247:2 › Settings: Change personal information › can reset the Fediverse handle (9.3s)
+2026-11-19T21:26:50.3311645Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:26:50.3314949Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:26:50.6527615Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:26:50.6596062Z 
+2026-11-19T21:26:50.6601705Z   58 passed (6.6m)
+2026-11-19T21:26:50.7041491Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:26:50.7041899Z with:
+2026-11-19T21:26:50.7042124Z   name: results-blacksmith-4-6
+2026-11-19T21:26:50.7042379Z   path: results.json
+2026-11-19T21:26:50.7042598Z   retention-days: 30
+2026-11-19T21:26:50.7042833Z   if-no-files-found: ignore
+2026-11-19T21:26:50.7043076Z   compression-level: 6
+2026-11-19T21:26:50.7043292Z   overwrite: false
+2026-11-19T21:26:50.7043511Z   include-hidden-files: false
+2026-11-19T21:26:50.7043755Z   archive: true
+2026-11-19T21:26:50.7043952Z env:
+2026-11-19T21:26:50.7044158Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:26:50.7044436Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:26:50.7044780Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:26:50.7045046Z ##[endgroup]
+2026-11-19T21:26:50.9230640Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:26:50.9251540Z Artifact name is valid!
+2026-11-19T21:26:50.9252466Z Root directory input is valid!
+2026-11-19T21:26:51.3015702Z Uploading artifact: results-blacksmith-4-6.zip
+2026-11-19T21:26:51.3047195Z Beginning upload of artifact content to blob storage
+2026-11-19T21:26:51.5815034Z Uploaded bytes 6870
+2026-11-19T21:26:51.6430464Z Finished uploading artifact content to blob storage!
+2026-11-19T21:26:51.6431084Z SHA256 digest of uploaded artifact is 350f549c24aed940a3c0575b4fbb09069d58558c8c454279a6b8630fe374f84f
+2026-11-19T21:26:51.6431387Z Finalizing artifact upload
+2026-11-19T21:26:52.1824796Z Artifact results-blacksmith-4-6 successfully finalized. Artifact ID 14575816902
+2026-11-19T21:26:52.1826668Z Artifact results-blacksmith-4-6 has been successfully uploaded! Final size is 6870 bytes. Artifact ID is 14575816902
+2026-11-19T21:26:52.1832759Z Artifact download URL: https://github.com/BluebagAI/bench-nextcloud/actions/runs/44616825697/artifacts/14575816902
+2026-11-19T21:26:52.2145930Z Post job cleanup.
+2026-11-19T21:26:52.4145162Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-19T21:26:52.4177791Z ##[group]Run '/job_completed.sh'
+2026-11-19T21:26:52.4192753Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:26:52.4193114Z env:
+2026-11-19T21:26:52.4193340Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 296
+2026-11-19T21:26:52.4193620Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 938
+2026-11-19T21:26:52.4193804Z   BLACKSMITH_CHECK_RUN_ID: 135888957179
+2026-11-19T21:26:52.4194041Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 6 / 8 (blacksmith-4)
+2026-11-19T21:26:52.4194282Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:26:52.4194509Z ##[endgroup]
+2026-11-19T21:26:52.4369714Z 
+2026-11-19T21:26:52.4370762Z Cleaning up Docker resources before commit...
+2026-11-19T21:26:52.5553326Z Removing 1 dangling volume(s)...
+2026-11-19T21:26:52.9910155Z Docker cleanup phases:
+2026-11-19T21:26:52.9911482Z   containers       81ms
+2026-11-19T21:26:52.9919027Z   networks         14ms
+2026-11-19T21:26:52.9919229Z   volumes          42ms
+2026-11-19T21:26:52.9919376Z   builder         279ms
+2026-11-19T21:26:52.9919528Z   image_scan      133ms
+2026-11-19T21:26:52.9920102Z Docker cleanup complete: 0 container(s), 0 network(s), 1 volume(s), 0 image(s) removed
+2026-11-19T21:26:52.9920460Z 
+2026-11-19T21:26:52.9962454Z Docker container cache activated, computing hash...
+2026-11-19T21:26:53.0252040Z [docker-manifest] Image manifest: 23 image(s), 21859604095 bytes working set, 0 bytes evicted, 0 bytes reclaimable (deferred)
+2026-11-19T21:26:53.0372018Z Docker image hash computed:
+2026-11-19T21:26:53.0372740Z   current  43cfda87f72dd474faa7f3b919c9770a39ded5cf5010f2f6291274ed951ab60b
+2026-11-19T21:26:53.0373379Z   stored   43cfda87f72dd474faa7f3b919c9770a39ded5cf5010f2f6291274ed951ab60b
+2026-11-19T21:26:53.0373976Z Docker images to be cached:
+2026-11-19T21:26:53.0570386Z REPOSITORY                                                TAG             SIZE
+2026-11-19T21:26:53.0571762Z fcc-api                                                   latest          1.47GB
+2026-11-19T21:26:53.0572515Z wp-env-bench-gutenberg-test-c16a8885-wordpress            latest          872MB
+2026-11-19T21:26:53.0573214Z wp-env-bench-gutenberg-test-c16a8885-cli                  latest          564MB
+2026-11-19T21:26:53.0574757Z wp-env-env-1-b01ca7e3-wordpress                           latest          872MB
+2026-11-19T21:26:53.0575443Z wp-env-env-2-e775f50d-wordpress                           latest          872MB
+2026-11-19T21:26:53.0576265Z wp-env-env-1-b01ca7e3-cli                                 latest          564MB
+2026-11-19T21:26:53.0576879Z wp-env-env-2-e775f50d-cli                                 latest          564MB
+2026-11-19T21:26:53.0577452Z postgres                                                  16-alpine       295MB
+2026-11-19T21:26:53.0577920Z postgres                                                  18              474MB
+2026-11-19T21:26:53.0578461Z ghcr.io/gvenzl/oracle-free                                23              2.85GB
+2026-11-19T21:26:53.0578991Z postgres                                                  16              468MB
+2026-11-19T21:26:53.0579530Z postgres                                                  <none>          474MB
+2026-11-19T21:26:53.0580029Z mariadb                                                   12.3            341MB
+2026-11-19T21:26:53.0580514Z mariadb                                                   lts             341MB
+2026-11-19T21:26:53.0581036Z documenso-dev-gotenberg                                   latest          1.36GB
+2026-11-19T21:26:53.0581518Z redis                                                     8-alpine        120MB
+2026-11-19T21:26:53.0581975Z redis                                                     alpine          120MB
+2026-11-19T21:26:53.0582444Z redis                                                     latest          146MB
+2026-11-19T21:26:53.0582897Z postgres                                                  15              445MB
+2026-11-19T21:26:53.0584317Z langwatch/langevals                                       latest          2.08GB
+2026-11-19T21:26:53.0584872Z mysql                                                     9.7             931MB
+2026-11-19T21:26:53.0585364Z clickhouse/clickhouse-server                              26.8.36.3       904MB
+2026-11-19T21:26:53.0585716Z ghcr.io/nextcloud/continuous-integration-shallow-server   latest          1.87GB
+2026-11-19T21:26:53.0586259Z inbucket/inbucket                                         latest          33.7MB
+2026-11-19T21:26:53.0586870Z mcr.microsoft.com/playwright                              v1.59.1-noble   2.41GB
+2026-11-19T21:26:53.0587434Z langwatch/opensearch-lite                                 latest          1.45GB
+2026-11-19T21:26:53.1051654Z Stopping docker service...
+2026-11-19T21:26:53.2678964Z Syncing filesystem...
+2026-11-19T21:26:53.4101198Z Unmounting /var/lib/docker...
+2026-11-19T21:26:53.5065483Z Docker shutdown phases:
+2026-11-19T21:26:53.5067759Z   docker_stop     118ms
+2026-11-19T21:26:53.5069467Z   sync            107ms
+2026-11-19T21:26:53.5070873Z   umount          217ms
+2026-11-19T21:26:53.5071900Z   total           445ms
+2026-11-19T21:26:53.5422050Z Docker container hash match - not committing
+2026-11-19T21:26:53.6603232Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-19T21:26:53.6696205Z Cleaning up orphan processes
