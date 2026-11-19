@@ -3,6 +3,9 @@
  - SPDX-FileCopyrightText: 2013-2016 ownCloud, Inc.
  - SPDX-License-Identifier: AGPL-3.0-or-later
 -->
+
+> **Benchmark copy.** This repository is an unmodified copy of [nextcloud/server](https://github.com/nextcloud/server) at commit [`c5c9b14da32bf00d5ee8b795372b92db3d20e24a`](https://github.com/nextcloud/server/commit/c5c9b14da32bf00d5ee8b795372b92db3d20e24a), used to benchmark CI runners on the project's own Playwright suite. It is not affiliated with or endorsed by the project. The only changes: this note, `.github/workflows/bench.yml` (run by hand only), and the project's other GitHub Actions workflows and Dependabot config removed so nothing runs on its own. The project's license applies (see the license file). Each benchmark run's logs and test results are saved on the [`bench-results`](../../tree/bench-results) branch.
+
 # Nextcloud Server ☁
 [![REUSE status](https://api.reuse.software/badge/github.com/nextcloud/server)](https://api.reuse.software/info/github.com/nextcloud/server)
 [![codecov](https://codecov.io/gh/nextcloud/server/branch/master/graph/badge.svg)](https://codecov.io/gh/nextcloud/server)
