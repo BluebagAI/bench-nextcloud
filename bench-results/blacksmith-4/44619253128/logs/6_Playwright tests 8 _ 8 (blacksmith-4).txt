@@ -1,0 +1,328 @@
+﻿2026-11-19T21:33:14.1173312Z Current runner version: '2.338.2'
+2026-11-19T21:33:14.1177380Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-uwzmubx4u6gpiklq'
+2026-11-19T21:33:14.1178257Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-19T21:33:14.1179116Z Machine name: 'ip-172-31-73-130'
+2026-11-19T21:33:14.1180694Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:33:14.1181296Z Contents: read
+2026-11-19T21:33:14.1181649Z Metadata: read
+2026-11-19T21:33:14.1182030Z ##[endgroup]
+2026-11-19T21:33:14.1183973Z Secret source: Actions
+2026-11-19T21:33:14.1184911Z Cache mode: write
+2026-11-19T21:33:14.1185523Z Prepare workflow directory
+2026-11-19T21:33:14.1530721Z Prepare all required actions
+2026-11-19T21:33:14.1570308Z Getting action download info
+2026-11-19T21:33:14.5066163Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T21:33:14.6156040Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:33:14.6378886Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T21:33:15.1434996Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T21:33:15.7753615Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:33:16.4329497Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:33:17.1512323Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-19T21:33:17.1563861Z Complete job name: Playwright tests 8 / 8 (blacksmith-4)
+2026-11-19T21:33:17.2010219Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T21:33:17.2139087Z ##[group]Run '/setup.sh'
+2026-11-19T21:33:17.2157879Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:33:17.2158244Z env:
+2026-11-19T21:33:17.2158399Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:17.2158586Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:17.2158766Z   BLACKSMITH_CHECK_RUN_ID: 135897923904
+2026-11-19T21:33:17.2159050Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 8 / 8 (blacksmith-4)
+2026-11-19T21:33:17.2159291Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:33:17.2159475Z ##[endgroup]
+2026-11-19T21:33:17.2571743Z Logging daemon started (blacksmithd for logs)
+2026-11-19T21:33:17.2687421Z Results daemon started (blacksmithd for results)
+2026-11-19T21:33:17.2871335Z Background adoption and SSH setup started (PID: 3280)
+2026-11-19T21:33:17.2874362Z 
+2026-11-19T21:33:17.2875010Z ----------------------------------------
+2026-11-19T21:33:17.2875659Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44619253128/jobs/135897923904
+2026-11-19T21:33:17.2876048Z SSH Access (using your GitHub SSH key):
+2026-11-19T21:33:17.2876485Z   ssh -p 64002 runner@blacksmith-4vcpu-ubuntu-2404-uwzmubx4u6gpiklq.vm.blacksmith.sh
+2026-11-19T21:33:17.2876792Z 
+2026-11-19T21:33:17.2876952Z No GitHub SSH key? Add one at:
+2026-11-19T21:33:17.2877381Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-19T21:33:17.2877756Z 
+2026-11-19T21:33:17.2877911Z ----------------------------------------
+2026-11-19T21:33:17.2878127Z 
+2026-11-19T21:33:17.2878356Z VM ID: blacksmith-4vcpu-ubuntu-2404-uwzmubx4u6gpiklq
+2026-11-19T21:33:17.2878661Z Host: production-192.240.249.49-x8664
+2026-11-19T21:33:17.2878930Z Host Agent PID: 3951541
+2026-11-19T21:33:17.2879163Z Host Agent Git SHA: d296ee1c7
+2026-11-19T21:33:17.2879435Z Host CPU Manufacturer: AuthenticAMD
+2026-11-19T21:33:17.2879739Z Blacksmith Host Generation: gen 2
+2026-11-19T21:33:17.2880013Z Petname: production-outgoing-dragon-31bc60f2
+2026-11-19T21:33:17.2881695Z Region: us-west
+2026-11-19T21:33:17.2882007Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-19T21:33:17.2895602Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-19T21:33:17.2899826Z 
+2026-11-19T21:33:17.2900021Z Enabling Blacksmith transparent cache
+2026-11-19T21:33:17.3230965Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T21:33:17.3231301Z with:
+2026-11-19T21:33:17.3231465Z   key: playwright-context-44619253128
+2026-11-19T21:33:17.3231643Z   path: ./
+2026-11-19T21:33:17.3231794Z   enableCrossOsArchive: false
+2026-11-19T21:33:17.3231966Z   fail-on-cache-miss: false
+2026-11-19T21:33:17.3232130Z   lookup-only: false
+2026-11-19T21:33:17.3232299Z env:
+2026-11-19T21:33:17.3232446Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:17.3232711Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:17.3233014Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:17.3233280Z ##[endgroup]
+2026-11-19T21:33:17.9002587Z Cache hit for: playwright-context-44619253128
+2026-11-19T21:33:18.4237959Z Received 306476966 of 306476966 (100.0%), 606.4 MBs/sec
+2026-11-19T21:33:18.4239684Z Cache Size: ~292 MB (306476966 B)
+2026-11-19T21:33:18.4287997Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/17b77bcd-bfbb-4866-a3b7-1607f7862919/cache.tzst -P -C /home/runner/_work/bench-nextcloud/bench-nextcloud --use-compress-program unzstd
+2026-11-19T21:33:20.0063800Z Cache restored successfully
+2026-11-19T21:33:20.0419429Z Cache restored from key: playwright-context-44619253128
+2026-11-19T21:33:20.0579353Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T21:33:20.0579645Z with:
+2026-11-19T21:33:20.0579775Z   path: ./package.json
+2026-11-19T21:33:20.0579904Z env:
+2026-11-19T21:33:20.0580033Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:20.0580200Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:20.0580376Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:20.0580544Z ##[endgroup]
+2026-11-19T21:33:20.1202794Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T21:33:20.1203044Z with:
+2026-11-19T21:33:20.1203192Z   node-version: ^24.0.0
+2026-11-19T21:33:20.1203332Z   check-latest: false
+2026-11-19T21:33:20.1204509Z   token: ***
+2026-11-19T21:33:20.1204638Z   package-manager-cache: true
+2026-11-19T21:33:20.1204799Z env:
+2026-11-19T21:33:20.1204935Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:20.1205133Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:20.1205302Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:20.1205462Z ##[endgroup]
+2026-11-19T21:33:20.1965179Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-19T21:33:20.2635133Z ##[group]Environment details
+2026-11-19T21:33:20.4819512Z node: v24.22.1
+2026-11-19T21:33:20.4819796Z npm: 11.19.1
+2026-11-19T21:33:20.4819987Z yarn: 1.22.22
+2026-11-19T21:33:20.4820813Z ##[endgroup]
+2026-11-19T21:33:20.4945702Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T21:33:20.4945971Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T21:33:20.4967875Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:33:20.4968046Z env:
+2026-11-19T21:33:20.4968180Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:20.4968359Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:20.4968544Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:20.4968728Z ##[endgroup]
+2026-11-19T21:33:23.2628823Z 
+2026-11-19T21:33:23.2632487Z changed 23 packages in 3s
+2026-11-19T21:33:23.2632787Z 
+2026-11-19T21:33:23.2632922Z 15 packages are looking for funding
+2026-11-19T21:33:23.2633152Z   run `npm fund` for details
+2026-11-19T21:33:23.2885522Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T21:33:23.2885977Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T21:33:23.2909374Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:33:23.2909626Z env:
+2026-11-19T21:33:23.2909838Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:23.2910127Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:23.2910320Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:23.2910498Z ##[endgroup]
+2026-11-19T21:33:23.3701723Z ##[group]Run npm run playwright -- --shard='8/8' --reporter=list,json
+2026-11-19T21:33:23.3702173Z [36;1mnpm run playwright -- --shard='8/8' --reporter=list,json[0m
+2026-11-19T21:33:23.3724287Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:33:23.3724472Z env:
+2026-11-19T21:33:23.3724639Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:33:23.3724934Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:33:23.3725124Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:33:23.3725444Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/_work/bench-nextcloud/bench-nextcloud/results.json
+2026-11-19T21:33:23.3725696Z ##[endgroup]
+2026-11-19T21:33:23.4360605Z 
+2026-11-19T21:33:23.4361301Z > nextcloud@1.0.0 playwright
+2026-11-19T21:33:23.4362024Z > playwright test --project=default --project=admin-settings --shard=8/8 --reporter=list,json
+2026-11-19T21:33:23.4362404Z 
+2026-11-19T21:33:24.2455756Z [WebServer] 
+2026-11-19T21:33:24.2456931Z [WebServer] Pulling images… ⏳
+2026-11-19T21:33:26.8509789Z [WebServer] └─ Done
+2026-11-19T21:33:26.8520130Z [WebServer] 
+2026-11-19T21:33:26.8520741Z [WebServer] Checking running containers… 🔍
+2026-11-19T21:33:26.8589601Z [WebServer] └─ None found!
+2026-11-19T21:33:26.8589926Z [WebServer] 
+2026-11-19T21:33:26.8590340Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T21:33:26.8590916Z [WebServer] ├─ Using branch 'master'
+2026-11-19T21:33:27.1031670Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T21:33:27.1032928Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T21:33:34.9823478Z [WebServer] └─ Done
+2026-11-19T21:33:34.9824282Z [WebServer] 
+2026-11-19T21:33:34.9825559Z [WebServer] Configuring Nextcloud…
+2026-11-19T21:33:35.3225925Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T21:33:35.6427318Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T21:33:35.9779996Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T21:33:36.3254654Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T21:33:36.6567943Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T21:33:36.9534006Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T21:33:36.9634083Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T21:33:37.9316598Z [WebServer] │  └─ OK !
+2026-11-19T21:33:37.9316985Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T21:33:38.2879583Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T21:33:38.2880567Z [WebServer] 
+2026-11-19T21:33:38.2880825Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T21:33:38.3480131Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T21:33:38.6647231Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T21:33:38.9729993Z [WebServer] ├─ Disabled app store
+2026-11-19T21:33:39.3173938Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T21:33:39.3174409Z [WebServer] ├─ Initialize cron job...
+2026-11-19T21:35:24.0852638Z [WebServer] │  └─ OK !
+2026-11-19T21:35:24.0859018Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T21:35:27.4179587Z 
+2026-11-19T21:35:27.4182033Z Running 57 tests using 1 worker, shard 8 of 8
+2026-11-19T21:35:27.4213038Z 
+2026-11-19T21:35:38.8146154Z   ✓   1 [default] › tests/playwright/e2e/users/users-search.spec.ts:37:2 › Settings: Unified search for accounts and groups › shows the search input in the navigation sidebar (4.1s)
+2026-11-19T21:35:41.1921488Z   ✓   2 [default] › tests/playwright/e2e/users/users-search.spec.ts:46:2 › Settings: Unified search for accounts and groups › dispatches the query to both the users and groups API (2.4s)
+2026-11-19T21:35:43.1110836Z   ✓   3 [default] › tests/playwright/e2e/users/users-search.spec.ts:66:2 › Settings: Unified search for accounts and groups › filters the group list when the query matches a group name (1.9s)
+2026-11-19T21:35:47.2422216Z   ✓   4 [default] › tests/playwright/e2e/users/users-search.spec.ts:82:2 › Settings: Unified search for accounts and groups › resets both lists when the clear button is clicked (2.1s)
+2026-11-19T21:35:50.3736940Z   ✓   5 [default] › tests/playwright/e2e/users/users.spec.ts:13:2 › Settings: Create and delete accounts › can create a user with username and password (3.1s)
+2026-11-19T21:35:54.3542446Z   ✓   6 [default] › tests/playwright/e2e/users/users.spec.ts:34:2 › Settings: Create and delete accounts › can create a user with display name and email (4.0s)
+2026-11-19T21:35:57.9980891Z   ✓   7 [default] › tests/playwright/e2e/users/users.spec.ts:57:2 › Settings: Create and delete accounts › can delete a user (3.6s)
+2026-11-19T21:36:02.2708826Z   ✓   8 [default] › tests/playwright/e2e/viewer/a11y.spec.ts:17:2 › Viewer accessibility › exposes the viewer as a labelled dialog with accessible controls (4.2s)
+2026-11-19T21:36:07.0692116Z   ✓   9 [default] › tests/playwright/e2e/viewer/actions/close.spec.ts:15:2 › Viewer close on click outside › closes when clicking outside the media (4.8s)
+2026-11-19T21:36:11.9302850Z   ✓  10 [default] › tests/playwright/e2e/viewer/actions/delete.spec.ts:11:2 › Viewer delete action › advances to the next file, then closes when the list is empty (4.8s)
+2026-11-19T21:36:16.9811603Z   ✓  11 [default] › tests/playwright/e2e/viewer/actions/download.spec.ts:13:2 › Viewer download restrictions › does not expose a download control when download is forbidden (5.0s)
+2026-11-19T21:36:21.0491808Z   ✓  12 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:16:2 › Viewer image editor action › opens the image editor and closes it on cancel (4.0s)
+2026-11-19T21:36:26.7215878Z   ✓  13 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:32:2 › Viewer image editor action › saves and shows the edited image without a refetch (5.7s)
+2026-11-19T21:36:31.3624717Z   ✓  14 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:45:2 › Viewer image editor action › reopens the editor from an editing=true URL (4.6s)
+2026-11-19T21:36:34.6846763Z   ✓  15 [default] › tests/playwright/e2e/viewer/actions/menu.spec.ts:12:2 › Viewer actions menu › does not render blank entries for custom-rendered file actions (3.3s)
+2026-11-19T21:36:38.6979374Z   ✓  16 [default] › tests/playwright/e2e/viewer/actions/rename.spec.ts:11:2 › Viewer rename action › renames the current file from the viewer (4.0s)
+2026-11-19T21:36:43.9575323Z   ✓  17 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:15:2 › Viewer sidebar action › opens the Files sidebar for the current file (5.2s)
+2026-11-19T21:36:48.4757273Z   ✓  18 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:28:2 › Viewer sidebar action › shows the sidebar full height next to the viewer (4.5s)
+2026-11-19T21:36:51.9640212Z   ✓  19 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:52:2 › Viewer sidebar action › opens the sidebar right after opening a file (3.5s)
+2026-11-19T21:36:56.4572143Z   ✓  20 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens audio.mp3 in the viewer (4.5s)
+2026-11-19T21:37:00.3602105Z   ✓  21 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens audio.ogg in the viewer (3.9s)
+2026-11-19T21:37:05.6864047Z   ✓  22 [default] › tests/playwright/e2e/viewer/compare.spec.ts:12:2 › Viewer compare API › renders two files side by side (5.3s)
+2026-11-19T21:37:10.9077734Z   ✓  23 [default] › tests/playwright/e2e/viewer/custom-list.spec.ts:96:2 › Viewer custom list › pages through the list it was handed, not the folder (5.2s)
+2026-11-19T21:37:17.4103131Z   ✓  24 [default] › tests/playwright/e2e/viewer/custom-list.spec.ts:113:2 › Viewer custom list › asks for more files when it runs out (6.5s)
+2026-11-19T21:37:21.2626949Z   ✓  25 [default] › tests/playwright/e2e/viewer/error.spec.ts:11:2 › Viewer error handling › shows an error when the media fails to load (3.8s)
+2026-11-19T21:37:26.4569899Z   ✓  26 [default] › tests/playwright/e2e/viewer/history.spec.ts:14:2 › Viewer browser history › reflects the open file in the URL and re-opens on refresh (5.2s)
+2026-11-19T21:37:31.1624906Z   ✓  27 [default] › tests/playwright/e2e/viewer/history.spec.ts:27:2 › Viewer browser history › back and forward move between the shown files (4.7s)
+2026-11-19T21:37:36.0430245Z   ✓  28 [default] › tests/playwright/e2e/viewer/history.spec.ts:50:2 › Viewer browser history › closing resets history so back does not re-open a file (4.8s)
+2026-11-19T21:37:40.1278537Z   ✓  29 [default] › tests/playwright/e2e/viewer/history.spec.ts:67:2 › Viewer browser history › navigating out of the openfile range closes the viewer (4.1s)
+2026-11-19T21:37:44.3564041Z   ✓  30 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image1.jpg in the viewer (4.2s)
+2026-11-19T21:37:49.1689367Z   ✓  31 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.png in the viewer (4.8s)
+2026-11-19T21:37:53.4595475Z   ✓  32 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.gif in the viewer (4.3s)
+2026-11-19T21:37:57.5649913Z   ✓  33 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.webp in the viewer (4.1s)
+2026-11-19T21:38:01.9644614Z   ✓  34 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.svg in the viewer (4.4s)
+2026-11-19T21:38:06.1128308Z   ✓  35 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.ico in the viewer (4.1s)
+2026-11-19T21:38:10.8078013Z   ✓  36 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image-apng.png in the viewer (4.7s)
+2026-11-19T21:38:14.8928410Z   ✓  37 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image-small.png in the viewer (4.1s)
+2026-11-19T21:38:24.1143888Z   ✓  38 [default] › tests/playwright/e2e/viewer/large-folder.spec.ts:16:2 › Viewer in a large folder › opens quickly and navigates in a folder with many files (9.2s)
+2026-11-19T21:38:31.2534107Z   ✓  39 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:19:2 › Viewer navigation › navigates forward through the list and loops back to the first image (7.1s)
+2026-11-19T21:38:36.4782636Z   ✓  40 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:41:2 › Viewer navigation › navigates backward and loops from the first image to the last (5.2s)
+2026-11-19T21:38:42.2507021Z   ✓  41 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:51:2 › Viewer navigation › closes the viewer when navigating back in the browser (5.7s)
+2026-11-19T21:38:48.1135895Z   ✓  42 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (image.png) › opens a file with an odd name in the viewer (5.8s)
+2026-11-19T21:38:53.1231005Z   ✓  43 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (video1.mp4) › opens a file with an odd name in the viewer (5.0s)
+2026-11-19T21:38:59.5433054Z   ✓  44 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (audio.mp3) › opens a file with an odd name in the viewer (6.4s)
+2026-11-19T21:39:05.9096147Z   ✓  45 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:92:2 › Odd file name (image, sidebar and public share) › opens the sidebar for an odd file name (6.3s)
+2026-11-19T21:39:12.5619314Z   ✓  46 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:104:2 › Odd file name (image, sidebar and public share) › opens an odd file name from a public link share (6.6s)
+2026-11-19T21:39:16.5596285Z   ✓  47 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:11:2 › Viewer on public link shares › opens a single shared image in the viewer (4.0s)
+2026-11-19T21:39:20.8864019Z   ✓  48 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:24:2 › Viewer on public link shares › opens a single shared video in the viewer (4.3s)
+2026-11-19T21:39:26.3486655Z   ✓  49 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:38:2 › Viewer on public link shares › navigates through a shared folder of images (5.4s)
+2026-11-19T21:39:31.9035287Z   ✓  50 [default] › tests/playwright/e2e/viewer/sort.spec.ts:12:2 › Viewer follows the files list order › steps through underscore-suffixed names in list order (5.5s)
+2026-11-19T21:39:36.3327079Z   ✓  51 [default] › tests/playwright/e2e/viewer/sort.spec.ts:31:2 › Viewer follows the files list order › steps through a folder sorted by modification time, not by name (4.4s)
+2026-11-19T21:39:41.1523481Z   ✓  52 [default] › tests/playwright/e2e/viewer/sort.spec.ts:62:2 › Viewer follows the files list order › steps backwards through a descending sort (4.8s)
+2026-11-19T21:39:44.8076191Z   ✓  53 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video1.mp4 in the viewer (3.6s)
+2026-11-19T21:39:48.4114289Z   ✓  54 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.webm in the viewer (3.6s)
+2026-11-19T21:39:52.2399678Z   ✓  55 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.mkv in the viewer (3.8s)
+2026-11-19T21:39:54.4260038Z   -  56 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.ogv in the viewer
+2026-11-19T21:39:56.9294833Z   ✓  57 [default] › tests/playwright/e2e/workflowengine/personal-settings.spec.ts:11:2 › Flow personal settings › offers nothing while no flow is available to users (2.5s)
+2026-11-19T21:40:00.4056062Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:40:00.4057127Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:40:00.8056744Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:40:00.8145825Z 
+2026-11-19T21:40:00.8155722Z   1 skipped
+2026-11-19T21:40:00.8155981Z   56 passed (6.6m)
+2026-11-19T21:40:00.8729765Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:40:00.8730143Z with:
+2026-11-19T21:40:00.8730348Z   name: results-blacksmith-4-8
+2026-11-19T21:40:00.8730554Z   path: results.json
+2026-11-19T21:40:00.8730693Z   retention-days: 30
+2026-11-19T21:40:00.8730844Z   if-no-files-found: ignore
+2026-11-19T21:40:00.8731010Z   compression-level: 6
+2026-11-19T21:40:00.8731162Z   overwrite: false
+2026-11-19T21:40:00.8731338Z   include-hidden-files: false
+2026-11-19T21:40:00.8731678Z   archive: true
+2026-11-19T21:40:00.8731882Z env:
+2026-11-19T21:40:00.8732120Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:40:00.8732435Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:40:00.8732728Z   GITHUB_REPO_NAME: BluebagAI/bench-nextcloud
+2026-11-19T21:40:00.8733029Z ##[endgroup]
+2026-11-19T21:40:01.3180784Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:40:01.3219579Z Artifact name is valid!
+2026-11-19T21:40:01.3220097Z Root directory input is valid!
+2026-11-19T21:40:01.6922388Z Uploading artifact: results-blacksmith-4-8.zip
+2026-11-19T21:40:01.6960211Z Beginning upload of artifact content to blob storage
+2026-11-19T21:40:01.9561826Z Uploaded bytes 7114
+2026-11-19T21:40:02.0171793Z Finished uploading artifact content to blob storage!
+2026-11-19T21:40:02.0173364Z SHA256 digest of uploaded artifact is ba3b96b2b5bfc724d48db986ff02787ce818371273eac9f61fb666fa0ec7f9aa
+2026-11-19T21:40:02.0174026Z Finalizing artifact upload
+2026-11-19T21:40:02.5320583Z Artifact results-blacksmith-4-8 successfully finalized. Artifact ID 14576638932
+2026-11-19T21:40:02.5321476Z Artifact results-blacksmith-4-8 has been successfully uploaded! Final size is 7114 bytes. Artifact ID is 14576638932
+2026-11-19T21:40:02.5325159Z Artifact download URL: https://github.com/BluebagAI/bench-nextcloud/actions/runs/44619253128/artifacts/14576638932
+2026-11-19T21:40:02.5529262Z Post job cleanup.
+2026-11-19T21:40:02.7329141Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-19T21:40:02.7387443Z ##[group]Run '/job_completed.sh'
+2026-11-19T21:40:02.7415672Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:40:02.7416091Z env:
+2026-11-19T21:40:02.7416354Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 318
+2026-11-19T21:40:02.7416707Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 919
+2026-11-19T21:40:02.7417031Z   BLACKSMITH_CHECK_RUN_ID: 135897923904
+2026-11-19T21:40:02.7417397Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright tests 8 / 8 (blacksmith-4)
+2026-11-19T21:40:02.7418355Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:40:02.7418661Z ##[endgroup]
+2026-11-19T21:40:02.7585590Z 
+2026-11-19T21:40:02.7586738Z Cleaning up Docker resources before commit...
+2026-11-19T21:40:02.8333999Z Removing 1 dangling volume(s)...
+2026-11-19T21:40:03.3046781Z Docker cleanup phases:
+2026-11-19T21:40:03.3047105Z   containers       42ms
+2026-11-19T21:40:03.3047387Z   networks         15ms
+2026-11-19T21:40:03.3047634Z   volumes          31ms
+2026-11-19T21:40:03.3047860Z   builder         294ms
+2026-11-19T21:40:03.3048093Z   image_scan      162ms
+2026-11-19T21:40:03.3048587Z Docker cleanup complete: 0 container(s), 0 network(s), 1 volume(s), 0 image(s) removed
+2026-11-19T21:40:03.3048917Z 
+2026-11-19T21:40:03.3077174Z Docker container cache activated, computing hash...
+2026-11-19T21:40:03.3531436Z [docker-manifest] Image manifest: 25 image(s), 22843304914 bytes working set, 0 bytes evicted, 0 bytes reclaimable (deferred)
+2026-11-19T21:40:03.3674970Z Docker image hash computed:
+2026-11-19T21:40:03.3675354Z   current  068216d6415b1c466ef76e181a03d7499cdb64cfbc70a4e3d76a55f4f0c2a218
+2026-11-19T21:40:03.3675734Z   stored   068216d6415b1c466ef76e181a03d7499cdb64cfbc70a4e3d76a55f4f0c2a218
+2026-11-19T21:40:03.3676013Z Docker images to be cached:
+2026-11-19T21:40:03.3831179Z REPOSITORY                                                TAG             SIZE
+2026-11-19T21:40:03.3831900Z fcc-api                                                   latest          1.47GB
+2026-11-19T21:40:03.3842007Z wp-env-bench-gutenberg-test-c16a8885-wordpress            latest          872MB
+2026-11-19T21:40:03.3842439Z wp-env-bench-gutenberg-test-c16a8885-cli                  latest          564MB
+2026-11-19T21:40:03.3842822Z wp-env-env-1-b01ca7e3-wordpress                           latest          872MB
+2026-11-19T21:40:03.3843175Z wp-env-env-2-e775f50d-wordpress                           latest          872MB
+2026-11-19T21:40:03.3843693Z wp-env-env-1-b01ca7e3-cli                                 latest          564MB
+2026-11-19T21:40:03.3844435Z wp-env-env-2-e775f50d-cli                                 latest          564MB
+2026-11-19T21:40:03.3845079Z postgres                                                  16-alpine       295MB
+2026-11-19T21:40:03.3845671Z postgres                                                  18              474MB
+2026-11-19T21:40:03.3846393Z ghcr.io/gvenzl/oracle-free                                23              2.85GB
+2026-11-19T21:40:03.3847117Z axllent/mailpit                                           latest          36.3MB
+2026-11-19T21:40:03.3847733Z postgres                                                  16              468MB
+2026-11-19T21:40:03.3848393Z postgres                                                  <none>          474MB
+2026-11-19T21:40:03.3848983Z mariadb                                                   12.3            341MB
+2026-11-19T21:40:03.3849564Z mariadb                                                   lts             341MB
+2026-11-19T21:40:03.3850195Z documenso-dev-gotenberg                                   latest          1.36GB
+2026-11-19T21:40:03.3850823Z redis                                                     8-alpine        120MB
+2026-11-19T21:40:03.3851387Z redis                                                     alpine          120MB
+2026-11-19T21:40:03.3851972Z redis                                                     latest          146MB
+2026-11-19T21:40:03.3853132Z postgres                                                  15              445MB
+2026-11-19T21:40:03.3853748Z langwatch/langevals                                       latest          2.08GB
+2026-11-19T21:40:03.3854338Z mysql                                                     9.7             931MB
+2026-11-19T21:40:03.3854948Z clickhouse/clickhouse-server                              26.8.36.3       904MB
+2026-11-19T21:40:03.3855653Z ghcr.io/nextcloud/continuous-integration-shallow-server   latest          1.87GB
+2026-11-19T21:40:03.3856382Z inbucket/inbucket                                         latest          33.7MB
+2026-11-19T21:40:03.3856969Z mongo                                                     8.2             947MB
+2026-11-19T21:40:03.3857585Z mcr.microsoft.com/playwright                              v1.59.1-noble   2.41GB
+2026-11-19T21:40:03.3858340Z langwatch/opensearch-lite                                 latest          1.45GB
+2026-11-19T21:40:03.4271013Z Stopping docker service...
+2026-11-19T21:40:03.5527780Z Syncing filesystem...
+2026-11-19T21:40:03.6464781Z Unmounting /var/lib/docker...
+2026-11-19T21:40:03.7170589Z Docker shutdown phases:
+2026-11-19T21:40:03.7170960Z   docker_stop      93ms
+2026-11-19T21:40:03.7171222Z   sync             81ms
+2026-11-19T21:40:03.7171465Z   umount          154ms
+2026-11-19T21:40:03.7171723Z   total           331ms
+2026-11-19T21:40:03.7284708Z Docker container hash match - not committing
+2026-11-19T21:40:03.8032953Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-19T21:40:03.8394995Z Cleaning up orphan processes
